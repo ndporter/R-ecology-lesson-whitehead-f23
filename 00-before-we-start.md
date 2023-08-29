@@ -98,7 +98,7 @@ aspect of your graph to visualize your data more effectively.
 
 Thousands of people use R daily. Many of them are willing to help you through
 mailing lists and websites such as [Stack Overflow](https://stackoverflow.com/),
-[RStudio community](https://community.rstudio.com/), and Slack channels such as  
+[RStudio community](https://community.rstudio.com/), and Slack channels such as
 the R for Data Science online community ([https://www.rfordatasci.com/](https://www.rfordatasci.com/)). In addition,
 there are numerous online and in person meetups organised globally through organisations
 such as R Ladies Global ([https://rladies.org/](https://rladies.org/)).
@@ -453,7 +453,7 @@ sessionInfo()
 #>  [9] tibble_3.2.1    ggplot2_3.4.2   tidyverse_2.0.0 knitr_1.42     
 #> 
 #> loaded via a namespace (and not attached):
-#>  [1] bit_4.0.5        gtable_0.3.3     compiler_4.3.1   renv_1.0.1      
+#>  [1] bit_4.0.5        gtable_0.3.3     compiler_4.3.1   renv_1.0.2      
 #>  [5] highr_0.10       tidyselect_1.2.0 blob_1.2.4       scales_1.2.1    
 #>  [9] fastmap_1.1.1    yaml_2.3.7       R6_2.5.1         generics_0.1.3  
 #> [13] munsell_0.5.0    DBI_1.1.3        pillar_1.9.0     tzdb_0.3.0      
