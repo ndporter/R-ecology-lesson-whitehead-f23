@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>Data Analysis and Visualisation in R for Ecologists: All in One View</title>
+<title>Data Analysis and Visualisation in R for Ecologists - Abbreviated: All in One View</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="assets/styles.css">
 <script src="assets/scripts.js" type="text/javascript"></script><!-- mathjax --><script type="text/x-mathjax-config">
@@ -58,7 +58,7 @@
       <img class="small-logo" alt="Data Carpentry" src="assets/images/data-logo-sm.svg">
 </div>
     <div class="lesson-title-md">
-      Data Analysis and Visualisation in R for Ecologists
+      Data Analysis and Visualisation in R for Ecologists - Abbreviated
     </div>
     <div class="search-icon-sm">
       <!-- TODO: do not show until we have search
@@ -69,7 +69,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item">
           <span class="lesson-title">
-            Data Analysis and Visualisation in R for Ecologists
+            Data Analysis and Visualisation in R for Ecologists - Abbreviated
           </span>
         </li>
         <li class="nav-item">
@@ -101,7 +101,7 @@
   </div>
 <!--/div.container-fluid -->
 </nav><div class="col-md-12 mobile-title">
-  Data Analysis and Visualisation in R for Ecologists
+  Data Analysis and Visualisation in R for Ecologists - Abbreviated
 </div>
 
 <aside class="col-md-12 lesson-progress"><div style="width: %" class="percentage">
@@ -231,18 +231,6 @@
 </div>
 <!--/div.accordion-flush-->
 
-<div class="accordion accordion-flush" id="accordionFlush7">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading7">
-        <a href="05-r-and-databases.html">6. SQL databases and R</a>
-    </div>
-<!--/div.accordion-header-->
-        
-  </div>
-<!--/div.accordion-item-->
-</div>
-<!--/div.accordion-flush-->
-
                 </div>
               </div>
             </div>
@@ -305,9 +293,9 @@
         
 <section id="aio-00-before-we-start"><p>Content from <a href="00-before-we-start.html">Before we start</a></p>
 <hr>
-<p> Last updated on 2023-08-15 | 
+<p> Last updated on 2023-09-29 | 
         
-        <a href="https://github.com/datacarpentry/R-ecology-lesson/edit/main/episodes/00-before-we-start.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/ndporter/R-ecology-lesson-whitehead-f23/edit/main/episodes/00-before-we-start.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -769,7 +757,7 @@ this lesson:</p></li>
 <span><span class="co">#&gt;  [9] tibble_3.2.1    ggplot2_3.4.2   tidyverse_2.0.0 knitr_1.42     </span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; loaded via a namespace (and not attached):</span></span>
-<span><span class="co">#&gt;  [1] bit_4.0.5        gtable_0.3.3     compiler_4.3.1   renv_1.0.1      </span></span>
+<span><span class="co">#&gt;  [1] bit_4.0.5        gtable_0.3.3     compiler_4.3.1   renv_1.0.3      </span></span>
 <span><span class="co">#&gt;  [5] highr_0.10       tidyselect_1.2.0 blob_1.2.4       scales_1.2.1    </span></span>
 <span><span class="co">#&gt;  [9] fastmap_1.1.1    yaml_2.3.7       R6_2.5.1         generics_0.1.3  </span></span>
 <span><span class="co">#&gt; [13] munsell_0.5.0    DBI_1.1.3        pillar_1.9.0     tzdb_0.3.0      </span></span>
@@ -831,14 +819,17 @@ programming questions.</li>
 </div>
 </section></section><section id="aio-01-intro-to-r"><p>Content from <a href="01-intro-to-r.html">Introduction to R</a></p>
 <hr>
-<p> Last updated on 2023-08-15 | 
+<p> Last updated on 2023-09-29 | 
         
-        <a href="https://github.com/datacarpentry/R-ecology-lesson/edit/main/episodes/01-intro-to-r.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/ndporter/R-ecology-lesson-whitehead-f23/edit/main/episodes/01-intro-to-r.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
 <hr>
 <hr>
+<p><em>Note: This lesson is a shortened version of the <a href="https://datacarpentry.org/R-ecology-lesson" class="external-link">Data Carpentry Ecology
+R Lesson</a>. Please refer to the original for additional functions and
+examples, as well as regular updates.</em></p>
 <section id="creating-objects-in-r"><h2 class="section-heading">Creating objects in R<a class="anchor" aria-label="anchor" href="#creating-objects-in-r"></a>
 </h2>
 <hr class="half-width">
@@ -868,11 +859,6 @@ but not in every context. Because of the <a href="https://blog.revolutionanalyti
 <a href="https://renkun.me/2014/01/28/difference-between-assignment-operators-in-r/" class="external-link">differences</a>
 in syntax, it is good practice to always use <code>&lt;-</code> for
 assignments.</p>
-<p>In RStudio, typing <kbd>Alt</kbd> + <kbd>-</kbd> (push <kbd>Alt</kbd>
-at the same time as the <kbd>-</kbd> key) will write <code>&lt;-</code>
-in a single keystroke in a PC, while typing <kbd>Option</kbd> +
-<kbd>-</kbd> (push <kbd>Option</kbd> at the same time as the
-<kbd>-</kbd> key) does the same in a Mac.</p>
 <p>Objects can be given almost any name such as <code>x</code>,
 <code>current_temperature</code>, or <code>subject_id</code>. Here are
 some further guidelines on naming objects:</p>
@@ -882,30 +868,15 @@ some further guidelines on naming objects:</p>
 <code>x2</code> is).</li>
 <li>R is case sensitive, so for example, <code>weight_kg</code> is
 different from <code>Weight_kg</code>.</li>
-<li>There are some names that cannot be used because they are the names
-of fundamental functions in R (e.g., <code>if</code>, <code>else</code>,
-<code>for</code>, see <a href="https://stat.ethz.ch/R-manual/R-devel/library/base/html/Reserved.html" class="external-link">here</a>
-for a complete list). In general, even if it’s allowed, it’s best to not
-use other function names (e.g., <code>c</code>, <code>T</code>,
-<code>mean</code>, <code>data</code>, <code>df</code>,
-<code>weights</code>). If in doubt, check the help to see if the name is
-already in use.</li>
-<li>It’s best to avoid dots (<code>.</code>) within names. Many function
-names in R itself have them and dots also have a special meaning
-(methods) in R and other programming languages. To avoid confusion,
-don’t include dots in names.</li>
-<li>It is recommended to use nouns for object names and verbs for
-function names.</li>
+<li>Don’t use function names of fundamental functions in R (e.g.,
+<code>if</code>, <code>else</code>, <code>for</code>, <code>c</code>,
+<code>T</code>, <code>mean</code>, <code>data</code>, <code>df</code>,
+<code>weights</code>, etc.). If in doubt, check the help to see if the
+name is already in use.</li>
+<li>Avoid dots (<code>.</code>) within names.</li>
 <li>Be consistent in the styling of your code, such as where you put
 spaces, how you name objects, etc. Styles can include “lower_snake”,
-“UPPER_SNAKE”, “lowerCamelCase”, “UpperCamelCase”, etc. Using a
-consistent coding style makes your code clearer to read for your future
-self and your collaborators. In R, three popular style guides come from
-<a href="https://google.github.io/styleguide/Rguide.xml" class="external-link">Google</a>, <a href="https://jef.works/R-style-guide/" class="external-link">Jean Fan</a> and the <a href="https://style.tidyverse.org/" class="external-link">tidyverse</a>. The tidyverse style
-is very comprehensive and may seem overwhelming at first. You can
-install the <a href="https://github.com/jimhester/lintr" class="external-link"><strong><code>lintr</code></strong></a>
-package to automatically check for issues in the styling of your
-code.</li>
+“UPPER_SNAKE”, “lowerCamelCase”, “UpperCamelCase”, etc.</li>
 </ul>
 <div id="objects-vs.-variables" class="callout callout">
 <div class="callout-square">
@@ -919,20 +890,18 @@ code.</li>
 <code>variables</code> in many other programming languages. Depending on
 the context, <code>object</code> and <code>variable</code> can have
 drastically different meanings. However, in this lesson, the two words
-are used synonymously. For more information see: <a href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Objects" class="external-link">https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Objects</a></p>
+are used synonymously. For more information see: <a href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Objects" class="external-link uri">https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Objects</a></p>
 </div>
 </div>
 </div>
 <p>When assigning a value to an object, R does not print anything. You
-can force R to print the value by using parentheses or by typing the
-object name:</p>
+can force R to print the value by typing the object name:</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">weight_kg</span> <span class="op">&lt;-</span> <span class="fl">55</span>    <span class="co"># doesn't print anything</span></span>
-<span><span class="op">(</span><span class="va">weight_kg</span> <span class="op">&lt;-</span> <span class="fl">55</span><span class="op">)</span>  <span class="co"># but putting parenthesis around the call prints the value of `weight_kg`</span></span>
-<span><span class="va">weight_kg</span>          <span class="co"># and so does typing the name of the object</span></span></code></pre>
+<span><span class="va">weight_kg</span>          <span class="co"># but typing the name of the object does (once it's created)</span></span></code></pre>
 </div>
 <p>Now that R has <code>weight_kg</code> in memory, we can do arithmetic
 with it. For instance, we may want to convert this weight into pounds
@@ -951,9 +920,9 @@ with it. For instance, we may want to convert this weight into pounds
 <code class="sourceCode R"><span><span class="va">weight_kg</span> <span class="op">&lt;-</span> <span class="fl">57.5</span></span>
 <span><span class="fl">2.2</span> <span class="op">*</span> <span class="va">weight_kg</span></span></code></pre>
 </div>
-<p>This means that assigning a value to one object does not change the
-values of other objects. For example, let’s store the animal’s weight in
-pounds in a new object, <code>weight_lb</code>:</p>
+<p>Assigning a value to one object does not change the values of other
+objects. For example, let’s store the animal’s weight in pounds in a new
+object, <code>weight_lb</code>:</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -974,7 +943,13 @@ pounds in a new object, <code>weight_lb</code>:</p>
 </h3>
 <p>Up to now, your code has been in the console. This is useful for
 quick queries but not so helpful if you want to revisit your work for
-any reason. A script can be opened by pressing <kbd>Ctrl</kbd> +
+any reason.</p>
+<p>The easiest way to ensure your R code (scripts) works seamlessly with
+data and other files is to create a project with
+<code>File - New Project</code>. Choose <code>New Directory</code> and
+<code>New Project</code> then choose a location for the folder and
+create the project.</p>
+<p>Create a script in your new project by pressing <kbd>Ctrl</kbd> +
 <kbd>Shift</kbd> + <kbd>N</kbd>. It is wise to save your script file
 immediately. To do this press <kbd>Ctrl</kbd> + <kbd>S</kbd>. This will
 open a dialogue box where you can decide where to save your script file,
@@ -995,27 +970,20 @@ keyboard <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>. If you only
 want to comment out one line, you can put the cursor at any location of
 that line (i.e. no need to select the whole line), then press
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>.</p>
-<div id="challenge" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<div id="challenge" class="callout-inner">
-<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge"></a>
-</h3>
-<div class="callout-content">
-<p>What are the values after each statement in the following?</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">mass</span> <span class="op">&lt;-</span> <span class="fl">47.5</span>            <span class="co"># mass?</span></span>
-<span><span class="va">age</span>  <span class="op">&lt;-</span> <span class="fl">122</span>             <span class="co"># age?</span></span>
-<span><span class="va">mass</span> <span class="op">&lt;-</span> <span class="va">mass</span> <span class="op">*</span> <span class="fl">2.0</span>      <span class="co"># mass?</span></span>
-<span><span class="va">age</span>  <span class="op">&lt;-</span> <span class="va">age</span> <span class="op">-</span> <span class="fl">20</span>        <span class="co"># age?</span></span>
-<span><span class="va">mass_index</span> <span class="op">&lt;-</span> <span class="va">mass</span><span class="op">/</span><span class="va">age</span>  <span class="co"># mass_index?</span></span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This line is a comment and doesn't cause a problem</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">*</span> <span class="dv">3</span> <span class="co">#this comment doesn't either</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>But this line will produce an error</span></code></pre>
 </div>
-</div>
-</div>
+<div class="codewrapper">
+<h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="error" tabindex="0"><code><span><span class="co">#&gt; Error: &lt;text&gt;:3:5: unexpected symbol</span></span>
+<span><span class="co">#&gt; 2: 2 * 3 #this comment doesn't either</span></span>
+<span><span class="co">#&gt; 3: But this</span></span>
+<span><span class="co">#&gt;        ^</span></span></code></pre>
 </div>
 </div>
 <div class="section level3">
@@ -1027,37 +995,10 @@ predefined, or can be made available by importing R <em>packages</em>
 (more on that later). A function usually takes one or more inputs called
 <em>arguments</em>. Functions often (but not always) return a
 <em>value</em>. A typical example would be the function
-<code>sqrt()</code>. The input (the argument) must be a number, and the
-return value (in fact, the output) is the square root of that number.
-Executing a function (‘running it’) is called <em>calling</em> the
-function. An example of a function call is:</p>
-<div class="codewrapper sourceCode" id="cb9">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">weight_kg</span> <span class="op">&lt;-</span> <span class="fu">sqrt</span><span class="op">(</span><span class="fl">10</span><span class="op">)</span></span></code></pre>
-</div>
-<p>Here, the value of 10 is given to the <code>sqrt()</code> function,
-the <code>sqrt()</code> function calculates the square root, and returns
-the value which is then assigned to the object <code>weight_kg</code>.
-This function takes one argument, other functions might take
-several.</p>
-<p>The return ‘value’ of a function need not be numerical (like that of
-<code>sqrt()</code>), and it also does not need to be a single item: it
-can be a set of things, or even a dataset. We’ll see that when we read
-data files into R.</p>
-<p>Arguments can be anything, not only numbers or filenames, but also
-other objects. Exactly what each argument means differs per function,
-and must be looked up in the documentation (see below). Some functions
-take arguments which may either be specified by the user, or, if left
-out, take on a <em>default</em> value: these are called
-<em>options</em>. Options are typically used to alter the way the
-function operates, such as whether it ignores ‘bad values’, or what
-symbol to use in a plot. However, if you want something specific, you
-can specify a value of your choice which will be used instead of the
-default.</p>
-<p>Let’s try a function that can take multiple arguments:
-<code>round()</code>.</p>
+<code>round()</code>. The input (the argument) must be a number, and the
+return value (in fact, the output) is the input rounded to the nearest
+whole number. Executing a function (‘running it’) is called
+<em>calling</em> the function. An example of a function call is:</p>
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1071,9 +1012,22 @@ default.</p>
 </div>
 <p>Here, we’ve called <code>round()</code> with just one argument,
 <code>3.14159</code>, and it has returned the value <code>3</code>.
-That’s because the default is to round to the nearest whole number. If
-we want more digits we can see how to do that by getting information
-about the <code>round</code> function. We can use
+That’s because the default is to round to the nearest whole number.</p>
+<p>The return ‘value’ of a function need not be numerical, and it also
+does not need to be a single item: it can be a set of things, or even a
+dataset. We’ll see that when we read data files into R.</p>
+<p>Arguments can be anything, not only numbers or filenames, but also
+other objects. Exactly what each argument means differs per function,
+and must be looked up in the documentation (see below). Some functions
+take arguments which may either be specified by the user, or, if left
+out, take on a <em>default</em> value: these are called
+<em>options</em>. Options are typically used to alter the way the
+function operates, such as whether it ignores ‘bad values’, or what
+symbol to use in a plot. However, if you want something specific, you
+can specify a value of your choice which will be used instead of the
+default.</p>
+<p>If we want more digits we can see how to do that by getting
+information about the <code>round</code> function. We can use
 <code>args(round)</code> to find what arguments it takes, or look at the
 help for this function using <code>?round</code>.</p>
 <div class="codewrapper sourceCode" id="cb12">
@@ -1174,7 +1128,7 @@ particular vector:</p>
 </h3>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">length</span><span class="op">(</span><span class="va">weight_g</span><span class="op">)</span></span>
-<span><span class="fu">length</span><span class="op">(</span><span class="va">animals</span><span class="op">)</span></span></code></pre>
+<span><span class="fu">length</span><span class="op">(</span><span class="va">animals</span><span class="op">)</span> <span class="co">#notice this doesn't return the number of characters</span></span></code></pre>
 </div>
 <p>An important feature of a vector, is that all of the elements are the
 same type of data. The function <code>class()</code> indicates what kind
@@ -1237,15 +1191,16 @@ to say about them</li>
 <p>You can check the type of your vector using the <code>typeof()</code>
 function and inputting your vector as the argument.</p>
 <p>Vectors are one of the many <strong>data structures</strong> that R
-uses. Other important ones are lists (<code>list</code>), matrices
-(<code>matrix</code>), data frames (<code>data.frame</code>), factors
-(<code>factor</code>) and arrays (<code>array</code>).</p>
-<div id="challenge-1" class="callout challenge">
+uses. Other important types you may encounter are lists
+(<code>list</code>), matrices (<code>matrix</code>), data frames
+(<code>data.frame</code>), factors (<code>factor</code>) and arrays
+(<code>array</code>).</p>
+<div id="challenge" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-1" class="callout-inner">
-<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge-1"></a>
+<div id="challenge" class="callout-inner">
+<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge"></a>
 </h3>
 <div class="callout-content">
 <ul>
@@ -1263,19 +1218,19 @@ types in a single vector?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>R implicitly converts them to all be the same type</p>
 </div>
 </div>
 </div>
 </div>
-<div id="challenge-1" class="callout challenge">
+<div id="challenge" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-1" class="callout-inner">
-<h3 class="callout-title">Challenge<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge-1"></a>
+<div id="challenge" class="callout-inner">
+<h3 class="callout-title">Challenge<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge"></a>
 </h3>
 <div class="callout-content">
 <ul>
@@ -1304,7 +1259,7 @@ types in a single vector?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Vectors can be of only one data type. R tries to convert (coerce) the
 content of this vector to find a “common denominator” that doesn’t lose
@@ -1313,12 +1268,12 @@ any information.</p>
 </div>
 </div>
 </div>
-<div id="challenge-1" class="callout challenge">
+<div id="challenge" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-1" class="callout-inner">
-<h3 class="callout-title">Challenge<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge-1"></a>
+<div id="challenge" class="callout-inner">
+<h3 class="callout-title">Challenge<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge"></a>
 </h3>
 <div class="callout-content">
 <ul>
@@ -1344,7 +1299,7 @@ the 2 <code>..._logical</code>s from above):</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Only one. There is no memory of past data types, and the coercion
 happens the first time the vector is evaluated. Therefore, the
@@ -1355,12 +1310,12 @@ happens the first time the vector is evaluated. Therefore, the
 </div>
 </div>
 </div>
-<div id="challenge-1" class="callout challenge">
+<div id="challenge" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-1" class="callout-inner">
-<h3 class="callout-title">Challenge<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge-1"></a>
+<div id="challenge" class="callout-inner">
+<h3 class="callout-title">Challenge<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge"></a>
 </h3>
 <div class="callout-content">
 <ul>
@@ -1381,7 +1336,7 @@ represents the hierarchy of how these data types are coerced?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>logical → numeric → character ← logical</p>
 </div>
@@ -1416,72 +1371,41 @@ provide one or several indices in square brackets. For instance:</p>
 </h3>
 <pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] "dog" "rat"</span></span></code></pre>
 </div>
-<p>We can also repeat the indices to create an object with more elements
-than the original one:</p>
+<div id="program-in-other-languages" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="program-in-other-languages" class="callout-inner">
+<h3 class="callout-title">Program in other languages?<a class="anchor" aria-label="anchor" href="#program-in-other-languages"></a>
+</h3>
+<div class="callout-content">
+<p>R indices start at 1. Some other languages (like C++, Java, Perl, and
+Python) count from 0 because that’s simpler for computers to do.</p>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="conditional-subsetting">Conditional subsetting<a class="anchor" aria-label="anchor" href="#conditional-subsetting"></a>
+</h3>
+<p>Another common way of subsetting is by selecting only values where a
+condition is <code>TRUE</code>. To do so, we use the <code>[]</code>
+notation with a logical test:</p>
 <div class="codewrapper sourceCode" id="cb33">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">more_animals</span> <span class="op">&lt;-</span> <span class="va">animals</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">2</span>, <span class="fl">1</span>, <span class="fl">4</span><span class="op">)</span><span class="op">]</span></span>
-<span><span class="va">more_animals</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] "mouse" "rat"   "dog"   "rat"   "mouse" "cat"</span></span></code></pre>
-</div>
-<p>R indices start at 1. Programming languages like Fortran, MATLAB,
-Julia, and R start counting at 1, because that’s what human beings
-typically do. Languages in the C family (including C++, Java, Perl, and
-Python) count from 0 because that’s simpler for computers to do.</p>
-<div class="section level3">
-<h3 id="conditional-subsetting">Conditional subsetting<a class="anchor" aria-label="anchor" href="#conditional-subsetting"></a>
-</h3>
-<p>Another common way of subsetting is by using a logical vector.
-<code>TRUE</code> will select the element with the same index, while
-<code>FALSE</code> will not:</p>
-<div class="codewrapper sourceCode" id="cb35">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">weight_g</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="fl">21</span>, <span class="fl">34</span>, <span class="fl">39</span>, <span class="fl">54</span>, <span class="fl">55</span><span class="op">)</span></span>
-<span><span class="va">weight_g</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">TRUE</span><span class="op">)</span><span class="op">]</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] 21 54 55</span></span></code></pre>
-</div>
-<p>Typically, these logical vectors are not typed by hand, but are the
-output of other functions or logical tests. For instance, if you wanted
-to select only the values above 50:</p>
-<div class="codewrapper sourceCode" id="cb37">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">weight_g</span> <span class="op">&gt;</span> <span class="fl">50</span>    <span class="co"># will return logicals with TRUE for the indices that meet the condition</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] FALSE FALSE FALSE  TRUE  TRUE</span></span></code></pre>
-</div>
-<div class="codewrapper sourceCode" id="cb39">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">## so we can use this to select only the values above 50</span></span>
+<code class="sourceCode R"><span><span class="co">## we can use this to select only the values above 50</span></span>
 <span><span class="va">weight_g</span><span class="op">[</span><span class="va">weight_g</span> <span class="op">&gt;</span> <span class="fl">50</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] 54 55</span></span></code></pre>
+<pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] 60 65 82 90</span></span></code></pre>
 </div>
 <p>You can combine multiple tests using <code>&amp;</code> (both
 conditions are true, AND) or <code>|</code> (at least one of the
 conditions is true, OR):</p>
-<div class="codewrapper sourceCode" id="cb41">
+<div class="codewrapper sourceCode" id="cb35">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1490,9 +1414,9 @@ conditions is true, OR):</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] 34 39</span></span></code></pre>
+<pre class="output" tabindex="0"><code><span><span class="co">#&gt; numeric(0)</span></span></code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb43">
+<div class="codewrapper sourceCode" id="cb37">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1501,9 +1425,9 @@ conditions is true, OR):</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] 21 55</span></span></code></pre>
+<pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] 30</span></span></code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb45">
+<div class="codewrapper sourceCode" id="cb39">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1525,76 +1449,20 @@ use the “or” operator <code>|</code> to test for equality to multiple
 values, but this can quickly become tedious. The function
 <code>%in%</code> allows you to test if any of the elements of a search
 vector are found:</p>
-<div class="codewrapper sourceCode" id="cb47">
+<div class="codewrapper sourceCode" id="cb41">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">animals</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">"mouse"</span>, <span class="st">"rat"</span>, <span class="st">"dog"</span>, <span class="st">"cat"</span>, <span class="st">"cat"</span><span class="op">)</span></span>
 <span></span>
-<span><span class="co"># return both rat and cat</span></span>
-<span><span class="va">animals</span><span class="op">[</span><span class="va">animals</span> <span class="op">==</span> <span class="st">"cat"</span> <span class="op">|</span> <span class="va">animals</span> <span class="op">==</span> <span class="st">"rat"</span><span class="op">]</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] "rat" "cat" "cat"</span></span></code></pre>
-</div>
-<div class="codewrapper sourceCode" id="cb49">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># return a logical vector that is TRUE for the elements within animals</span></span>
-<span><span class="co"># that are found in the character vector and FALSE for those that are not</span></span>
-<span><span class="va">animals</span> <span class="op">%in%</span> <span class="fu">c</span><span class="op">(</span><span class="st">"rat"</span>, <span class="st">"cat"</span>, <span class="st">"dog"</span>, <span class="st">"duck"</span>, <span class="st">"goat"</span>, <span class="st">"bird"</span>, <span class="st">"fish"</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] FALSE  TRUE  TRUE  TRUE  TRUE</span></span></code></pre>
-</div>
-<div class="codewrapper sourceCode" id="cb51">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># use the logical vector created by %in% to return elements from animals</span></span>
+<span><span class="co"># use the logical vector created by %in% to return elements from animals</span></span>
 <span><span class="co"># that are found in the character vector</span></span>
-<span><span class="va">animals</span><span class="op">[</span><span class="va">animals</span> <span class="op">%in%</span> <span class="fu">c</span><span class="op">(</span><span class="st">"rat"</span>, <span class="st">"cat"</span>, <span class="st">"dog"</span>, <span class="st">"duck"</span>, <span class="st">"goat"</span>, <span class="st">"bird"</span>, <span class="st">"fish"</span><span class="op">)</span><span class="op">]</span></span></code></pre>
+<span><span class="va">animals</span><span class="op">[</span><span class="va">animals</span> <span class="op">%in%</span> <span class="fu">c</span><span class="op">(</span><span class="st">"rat"</span>, <span class="st">"cat"</span>, <span class="st">"dog"</span><span class="op">)</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] "rat" "dog" "cat" "cat"</span></span></code></pre>
-</div>
-<div id="challenge-optional" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge-optional" class="callout-inner">
-<h3 class="callout-title">Challenge (optional)<a class="anchor" aria-label="anchor" href="#challenge-optional"></a>
-</h3>
-<div class="callout-content">
-<ul>
-<li>Can you figure out why <code>"four" &gt; "five"</code> returns
-<code>TRUE</code>?</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
-  <h4 class="accordion-header" id="headingSolution5">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
-<div class="accordion-body">
-<p>When using “&gt;” or “&lt;” on strings, R compares their alphabetical
-order. Here “four” comes after “five”, and therefore is “greater than”
-it.</p>
-</div>
-</div>
-</div>
 </div>
 </div>
 </section><section id="missing-data"><h2 class="section-heading">Missing data<a class="anchor" aria-label="anchor" href="#missing-data"></a>
@@ -1609,7 +1477,7 @@ This feature makes it harder to overlook the cases where you are dealing
 with missing data. You can add the argument <code>na.rm = TRUE</code> to
 calculate the result as if the missing values were removed
 (<code>rm</code> stands for ReMoved) first.</p>
-<div class="codewrapper sourceCode" id="cb53">
+<div class="codewrapper sourceCode" id="cb43">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1622,7 +1490,7 @@ calculate the result as if the missing values were removed
 <p>If your data include missing values, you may want to become familiar
 with the functions <code>is.na()</code>, <code>na.omit()</code>, and
 <code>complete.cases()</code>. See below for examples.</p>
-<div class="codewrapper sourceCode" id="cb54">
+<div class="codewrapper sourceCode" id="cb44">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1639,19 +1507,19 @@ with the functions <code>is.na()</code>, <code>na.omit()</code>, and
 </div>
 <p>Recall that you can use the <code>typeof()</code> function to find
 the type of your atomic vector.</p>
-<div id="challenge-2" class="callout challenge">
+<div id="challenge-1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-2" class="callout-inner">
-<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge-2"></a>
+<div id="challenge-1" class="callout-inner">
+<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge-1"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
 <li>Using this vector of heights in inches, create a new vector,
 <code>heights_no_na</code>, with the NAs removed.</li>
 </ol>
-<div class="codewrapper sourceCode" id="cb55">
+<div class="codewrapper sourceCode" id="cb45">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1666,16 +1534,16 @@ inches.</p></li>
 </div>
 </div>
 </div>
-<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
-  <h4 class="accordion-header" id="headingSolution6">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5">
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb56">
+<div class="codewrapper sourceCode" id="cb46">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1700,14 +1568,13 @@ inches.</p></li>
 </div>
 </div>
 <p>Now that we have learned how to write scripts, and the basics of R’s
-data structures, we are ready to start working with the Portal dataset
-we have been using in the other lessons, and learn about data
-frames.</p>
+data structures, we are ready to start working with a real dataset and
+learn about data frames.</p>
 </section></section><section id="aio-02-starting-with-data"><p>Content from <a href="02-starting-with-data.html">Starting with data</a></p>
 <hr>
-<p> Last updated on 2023-08-15 | 
+<p> Last updated on 2023-09-29 | 
         
-        <a href="https://github.com/datacarpentry/R-ecology-lesson/edit/main/episodes/02-starting-with-data.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/ndporter/R-ecology-lesson-whitehead-f23/edit/main/episodes/02-starting-with-data.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -1792,13 +1659,13 @@ download the CSV file that contains the survey data from Figshare, and
 we will use <code>read_csv()</code> to load the content of the CSV file
 into R.</p>
 <p>Inside the <code>download.file</code> command, the first entry is a
-character string with the source URL (“<a href="https://ndownloader.figshare.com/files/2292169" class="external-link">https://ndownloader.figshare.com/files/2292169</a>”).
-This source URL downloads a CSV file from figshare. The text after the
-comma (“data_raw/portal_data_joined.csv”) is the destination of the file
-on your local machine. You’ll need to have a folder on your machine
-called “data_raw” where you’ll download the file. So this command
-downloads a file from Figshare, names it “portal_data_joined.csv” and
-adds it to a preexisting folder named “data_raw”.</p>
+character string with the source URL (“<a href="https://ndownloader.figshare.com/files/2292169" class="external-link uri">https://ndownloader.figshare.com/files/2292169</a>”). This
+source URL downloads a CSV file from figshare. The text after the comma
+(“data_raw/portal_data_joined.csv”) is the destination of the file on
+your local machine. You’ll need to have a folder on your machine called
+“data_raw” where you’ll download the file. So this command downloads a
+file from Figshare, names it “portal_data_joined.csv” and adds it to a
+preexisting folder named “data_raw”.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1813,7 +1680,7 @@ adds it to a preexisting folder named “data_raw”.</p>
 <p>The file has now been downloaded to the destination you specified,
 but R has not yet loaded the data from the file into memory. To do this,
 we can use the <code>read_csv()</code> function from the
-<strong><code>tidyverse</code></strong> package.</p>
+<strong>`readr``</strong> package.</p>
 <p>Packages in R are basically sets of additional functions that let you
 do more stuff. The functions we’ve been using so far, like
 <code>round()</code>, <code>sqrt()</code>, or <code>c()</code> come
@@ -1824,11 +1691,13 @@ cover their differences but notice that the exact spelling determines
 which function is used. Before you use a package for the first time you
 need to install it on your machine, and then you should import it in
 every subsequent R session when you need it.</p>
-<p>To install the <strong><code>tidyverse</code></strong> package, we
-can type <code>install.packages("tidyverse")</code> straight into the
-console. In fact, it’s better to write this in the console than in our
-script for any package, as there’s no need to re-install packages every
-time we run the script. Then, to load the package type:</p>
+<p>The <strong><code>tidyverse</code></strong> package contains
+<strong><code>readr</code></strong> and other packages we’ll use. To
+install it, we can type <code>install.packages("tidyverse")</code>
+straight into the console. In fact, it’s better to write this in the
+console than in our script for any package, as there’s no need to
+re-install packages every time we run the script. Then, to load the
+package type:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1836,7 +1705,7 @@ time we run the script. Then, to load the package type:</p>
 <code class="sourceCode R"><span><span class="co">## load the tidyverse packages, incl. dplyr</span></span>
 <span><span class="kw">library</span><span class="op">(</span><span class="va">tidyverse</span><span class="op">)</span></span></code></pre>
 </div>
-<p>Now we can use the functions from the
+<p>Now we can use the functions from any
 <strong><code>tidyverse</code></strong> package. Let’s use
 <code>read_csv()</code> to read the data into a data frame (we will
 learn more about data frames later):</p>
@@ -1873,23 +1742,14 @@ option to specify the data type for a column manually by using the
 <h3 class="callout-title">Note<a class="anchor" aria-label="anchor" href="#note"></a>
 </h3>
 <div class="callout-content">
-<p><code>read_csv()</code> assumes that fields are delineated by commas.
-However, in several countries, the comma is used as a decimal separator
-and the semicolon (;) is used as a field delineator. If you want to read
-in this type of files in R, you can use the <code>read_csv2()</code>
-function. It behaves like <code>read_csv()</code> but uses different
-parameters for the decimal and the field separators. There is also the
-<code>read_tsv()</code> for tab separated data files and
-<code>read_delim()</code> for less common formats. Check out the help
-for <code>read_csv()</code> by typing <code>?read_csv</code> to learn
-more.</p>
-<p>In addition to the above versions of the csv format, you should
-develop the habits of looking at and recording some parameters of your
-csv files. For instance, the character encoding, control characters used
-for line ending, date format (if the date is not split into three
-variables), and the presence of unexpected <a href="https://en.wikipedia.org/wiki/Newline" class="external-link">newlines</a> are important
-characteristics of your data files. Those parameters will ease up the
-import step of your data in R.</p>
+<p><code>read_csv()</code> is actually a special case of
+<code>read_delim()</code> that assumes fields are delineated by commas.
+Check out the help by typing <code>?read_csv</code> to learn more.</p>
+<p>You may sometimes see a similar function called
+<code>read.csv()</code> with a dot instead of an underscore. This is an
+older function that doesn’t require
+<strong><code>tidyverse</code></strong> with different arguments and
+slightly different output.</p>
 </div>
 </div>
 </div>
@@ -1919,9 +1779,9 @@ function <code>head()</code>:</p>
 <span><span class="co">#&gt; 6       363    11    12  1977       2 NL         &lt;NA&gt;               NA     NA</span></span>
 <span><span class="co">#&gt; # ℹ 4 more variables: genus &lt;chr&gt;, species &lt;chr&gt;, taxa &lt;chr&gt;, plot_type &lt;chr&gt;</span></span></code></pre>
 </div>
-<p>Unlike the <code>print()</code> function, <code>head()</code> returns
-the extracted data. You could use it to assign the first 100 rows of
-<code>surveys</code> to an object using
+<p>Unlike the <code>print()</code> function, <code>head()</code>
+<strong>returns</strong> the extracted data. You could use it to assign
+the first 100 rows of <code>surveys</code> to an object using
 <code>surveys_sample &lt;- head(surveys, 100)</code>. This can be useful
 if you want to try out complex computations on a subset of your data
 before you apply them to the whole data set. There is a similar function
@@ -2029,86 +1889,8 @@ column</li>
 </ul>
 </li>
 </ul>
-<p>Note: most of these functions are “generic”, they can be used on
+<p>Note: most of these functions are “generic”; they can be used on
 other types of objects besides <code>data.frame</code>.</p>
-<div id="challenge" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge" class="callout-inner">
-<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge"></a>
-</h3>
-<div class="callout-content">
-<p>Based on the output of <code>str(surveys)</code>, can you answer the
-following questions?</p>
-<ul>
-<li>What is the class of the object <code>surveys</code>?</li>
-<li>How many rows and how many columns are in this object?</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
-<div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb9">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">str</span><span class="op">(</span><span class="va">surveys</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; spc_tbl_ [34,786 × 13] (S3: spec_tbl_df/tbl_df/tbl/data.frame)</span></span>
-<span><span class="co">#&gt;  $ record_id      : num [1:34786] 1 72 224 266 349 363 435 506 588 661 ...</span></span>
-<span><span class="co">#&gt;  $ month          : num [1:34786] 7 8 9 10 11 11 12 1 2 3 ...</span></span>
-<span><span class="co">#&gt;  $ day            : num [1:34786] 16 19 13 16 12 12 10 8 18 11 ...</span></span>
-<span><span class="co">#&gt;  $ year           : num [1:34786] 1977 1977 1977 1977 1977 ...</span></span>
-<span><span class="co">#&gt;  $ plot_id        : num [1:34786] 2 2 2 2 2 2 2 2 2 2 ...</span></span>
-<span><span class="co">#&gt;  $ species_id     : chr [1:34786] "NL" "NL" "NL" "NL" ...</span></span>
-<span><span class="co">#&gt;  $ sex            : chr [1:34786] "M" "M" NA NA ...</span></span>
-<span><span class="co">#&gt;  $ hindfoot_length: num [1:34786] 32 31 NA NA NA NA NA NA NA NA ...</span></span>
-<span><span class="co">#&gt;  $ weight         : num [1:34786] NA NA NA NA NA NA NA NA 218 NA ...</span></span>
-<span><span class="co">#&gt;  $ genus          : chr [1:34786] "Neotoma" "Neotoma" "Neotoma" "Neotoma" ...</span></span>
-<span><span class="co">#&gt;  $ species        : chr [1:34786] "albigula" "albigula" "albigula" "albigula" ...</span></span>
-<span><span class="co">#&gt;  $ taxa           : chr [1:34786] "Rodent" "Rodent" "Rodent" "Rodent" ...</span></span>
-<span><span class="co">#&gt;  $ plot_type      : chr [1:34786] "Control" "Control" "Control" "Control" ...</span></span>
-<span><span class="co">#&gt;  - attr(*, "spec")=</span></span>
-<span><span class="co">#&gt;   .. cols(</span></span>
-<span><span class="co">#&gt;   ..   record_id = col_double(),</span></span>
-<span><span class="co">#&gt;   ..   month = col_double(),</span></span>
-<span><span class="co">#&gt;   ..   day = col_double(),</span></span>
-<span><span class="co">#&gt;   ..   year = col_double(),</span></span>
-<span><span class="co">#&gt;   ..   plot_id = col_double(),</span></span>
-<span><span class="co">#&gt;   ..   species_id = col_character(),</span></span>
-<span><span class="co">#&gt;   ..   sex = col_character(),</span></span>
-<span><span class="co">#&gt;   ..   hindfoot_length = col_double(),</span></span>
-<span><span class="co">#&gt;   ..   weight = col_double(),</span></span>
-<span><span class="co">#&gt;   ..   genus = col_character(),</span></span>
-<span><span class="co">#&gt;   ..   species = col_character(),</span></span>
-<span><span class="co">#&gt;   ..   taxa = col_character(),</span></span>
-<span><span class="co">#&gt;   ..   plot_type = col_character()</span></span>
-<span><span class="co">#&gt;   .. )</span></span>
-<span><span class="co">#&gt;  - attr(*, "problems")=&lt;externalptr&gt;</span></span></code></pre>
-</div>
-<div class="codewrapper sourceCode" id="cb11">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">## * class: data frame</span></span>
-<span><span class="co">## * how many rows: 34786,  how many columns: 13</span></span></code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
 </section><section id="indexing-and-subsetting-data-frames"><h2 class="section-heading">Indexing and subsetting data frames<a class="anchor" aria-label="anchor" href="#indexing-and-subsetting-data-frames"></a>
 </h2>
 <hr class="half-width">
@@ -2117,7 +1899,7 @@ we want to extract some specific data from it, we need to specify the
 “coordinates” we want from it. Row numbers come first, followed by
 column numbers. However, note that different ways of specifying these
 coordinates lead to results with different classes.</p>
-<div class="codewrapper sourceCode" id="cb12">
+<div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2167,16 +1949,15 @@ integers in increasing or decreasing order, test <code>1:10</code> and
 <code>10:1</code> for instance.</p>
 <p>You can also exclude certain indices of a data frame using the
 “<code>-</code>” sign:</p>
-<div class="codewrapper sourceCode" id="cb13">
+<div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">surveys</span><span class="op">[</span>, <span class="op">-</span><span class="fl">1</span><span class="op">]</span>                 <span class="co"># The whole data frame, except the first column</span></span>
-<span><span class="va">surveys</span><span class="op">[</span><span class="op">-</span><span class="op">(</span><span class="fl">7</span><span class="op">:</span><span class="fu">nrow</span><span class="op">(</span><span class="va">surveys</span><span class="op">)</span><span class="op">)</span>, <span class="op">]</span> <span class="co"># Equivalent to head(surveys)</span></span></code></pre>
+<code class="sourceCode R"><span><span class="va">surveys</span><span class="op">[</span>, <span class="op">-</span><span class="fl">1</span><span class="op">]</span>                 <span class="co"># The whole data frame, except the first column</span></span></code></pre>
 </div>
 <p>Data frames can be subset by calling indices (as shown previously),
 but also by calling their column names directly:</p>
-<div class="codewrapper sourceCode" id="cb14">
+<div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2191,72 +1972,8 @@ but also by calling their column names directly:</p>
 <span><span class="co"># This returns a vector:</span></span>
 <span><span class="va">surveys</span><span class="op">$</span><span class="va">species_id</span></span></code></pre>
 </div>
-<p>In RStudio, you can use the autocompletion feature to get the full
-and correct names of the columns.</p>
-<div id="challenge-1" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge-1" class="callout-inner">
-<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge-1"></a>
-</h3>
-<div class="callout-content">
-<ol style="list-style-type: decimal">
-<li><p>Create a <code>data.frame</code> (<code>surveys_200</code>)
-containing only the data in row 200 of the <code>surveys</code>
-dataset.</p></li>
-<li><p>Notice how <code>nrow()</code> gave you the number of rows in a
-<code>data.frame</code>?</p></li>
-</ol>
-<ul>
-<li>Use that number to pull out just that last row from the
-<code>surveys</code> dataset.</li>
-<li>Compare that with what you see as the last row using
-<code>tail()</code> to make sure it’s meeting expectations.</li>
-<li>Pull out that last row using <code>nrow()</code> instead of the row
-number.</li>
-<li>Create a new data frame (<code>surveys_last</code>) from that last
-row.</li>
-</ul>
-<ol start="3" style="list-style-type: decimal">
-<li><p>Use <code>nrow()</code> to extract the row that is in the middle
-of the data frame. Store the content of this row in an object named
-<code>surveys_middle</code>.</p></li>
-<li><p>Combine <code>nrow()</code> with the <code>-</code> notation
-above to reproduce the behavior of <code>head(surveys)</code>, keeping
-just the first through 6th rows of the surveys dataset.</p></li>
-</ol>
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
-<div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb15">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">## 1.</span></span>
-<span><span class="va">surveys_200</span> <span class="op">&lt;-</span> <span class="va">surveys</span><span class="op">[</span><span class="fl">200</span>, <span class="op">]</span></span>
-<span><span class="co">## 2.</span></span>
-<span><span class="co"># Saving `n_rows` to improve readability and reduce duplication</span></span>
-<span><span class="va">n_rows</span> <span class="op">&lt;-</span> <span class="fu">nrow</span><span class="op">(</span><span class="va">surveys</span><span class="op">)</span></span>
-<span><span class="va">surveys_last</span> <span class="op">&lt;-</span> <span class="va">surveys</span><span class="op">[</span><span class="va">n_rows</span>, <span class="op">]</span></span>
-<span><span class="co">## 3.</span></span>
-<span><span class="va">surveys_middle</span> <span class="op">&lt;-</span> <span class="va">surveys</span><span class="op">[</span><span class="va">n_rows</span> <span class="op">/</span> <span class="fl">2</span>, <span class="op">]</span></span>
-<span><span class="co">## 4.</span></span>
-<span><span class="va">surveys_head</span> <span class="op">&lt;-</span> <span class="va">surveys</span><span class="op">[</span><span class="op">-</span><span class="op">(</span><span class="fl">7</span><span class="op">:</span><span class="va">n_rows</span><span class="op">)</span>, <span class="op">]</span></span></code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
+<p>In RStudio, you can use the autocompletion feature with the
+<kbd>tab</kbd> key to find full and correct names of columns.</p>
 </section><section id="factors"><h2 class="section-heading">Factors<a class="anchor" aria-label="anchor" href="#factors"></a>
 </h2>
 <hr class="half-width">
@@ -2280,7 +1997,7 @@ as strings.</p>
 that contain text are not automatically coerced (=converted) into the
 <code>factor</code> data type, but once we have loaded the data we can
 do the conversion using the <code>factor()</code> function:</p>
-<div class="codewrapper sourceCode" id="cb16">
+<div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2289,7 +2006,7 @@ do the conversion using the <code>factor()</code> function:</p>
 <p>We can see that the conversion has worked by using the
 <code>summary()</code> function again. This produces a table with the
 counts for each factor level:</p>
-<div class="codewrapper sourceCode" id="cb17">
+<div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2297,7 +2014,7 @@ counts for each factor level:</p>
 </div>
 <p>By default, R always sorts levels in alphabetical order. For
 instance, if you have a factor with 2 levels:</p>
-<div class="codewrapper sourceCode" id="cb18">
+<div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2309,7 +2026,7 @@ comes before <code>m</code>, even though the first element in this
 vector is <code>"male"</code>). You can see this by using the function
 <code>levels()</code> and you can find the number of levels using
 <code>nlevels()</code>:</p>
-<div class="codewrapper sourceCode" id="cb19">
+<div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2321,7 +2038,7 @@ might want to specify the order because it is meaningful (e.g., “low”,
 “medium”, “high”), it improves your visualization, or it is required by
 a particular type of analysis. Here, one way to reorder our levels in
 the <code>sex</code> vector would be:</p>
-<div class="codewrapper sourceCode" id="cb20">
+<div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2333,7 +2050,7 @@ the <code>sex</code> vector would be:</p>
 <pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] male   female female male  </span></span>
 <span><span class="co">#&gt; Levels: female male</span></span></code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb22">
+<div class="codewrapper sourceCode" id="cb18">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2354,12 +2071,12 @@ You wouldn’t be able to tell just from the integer data. Factors, on the
 other hand, have this information built in. It is particularly helpful
 when there are many levels (like the species names in our example
 dataset).</p>
-<div id="challenge-2" class="callout challenge">
+<div id="challenge" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-2" class="callout-inner">
-<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge-2"></a>
+<div id="challenge" class="callout-inner">
+<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
@@ -2375,16 +2092,16 @@ out…</p></li>
 </div>
 </div>
 </div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb24">
+<div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2403,9 +2120,9 @@ out…</p></li>
 <div class="section level3">
 <h3 id="converting-factors">Converting factors<a class="anchor" aria-label="anchor" href="#converting-factors"></a>
 </h3>
-<p>If you need to convert a factor to a character vector, you use
+<p>To convert a factor to a character vector, use
 <code>as.character(x)</code>.</p>
-<div class="codewrapper sourceCode" id="cb25">
+<div class="codewrapper sourceCode" id="cb21">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2421,20 +2138,16 @@ conversion from factor to numeric is a little trickier. The
 <code>as.numeric()</code> function returns the index values of the
 factor, not its levels, so it will result in an entirely new (and
 unwanted in this case) set of numbers. One method to avoid this is to
-convert factors to characters, and then to numbers.</p>
-<p>Another method is to use the <code>levels()</code> function.
-Compare:</p>
-<div class="codewrapper sourceCode" id="cb26">
+use the <code>levels()</code> function before converting to numeric:</p>
+<div class="codewrapper sourceCode" id="cb22">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">year_fct</span> <span class="op">&lt;-</span> <span class="fu">factor</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="fl">1990</span>, <span class="fl">1983</span>, <span class="fl">1977</span>, <span class="fl">1998</span>, <span class="fl">1990</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="fu">as.numeric</span><span class="op">(</span><span class="va">year_fct</span><span class="op">)</span>               <span class="co"># Wrong! And there is no warning...</span></span>
-<span><span class="fu">as.numeric</span><span class="op">(</span><span class="fu">as.character</span><span class="op">(</span><span class="va">year_fct</span><span class="op">)</span><span class="op">)</span> <span class="co"># Works...</span></span>
-<span><span class="fu">as.numeric</span><span class="op">(</span><span class="fu">levels</span><span class="op">(</span><span class="va">year_fct</span><span class="op">)</span><span class="op">)</span><span class="op">[</span><span class="va">year_fct</span><span class="op">]</span>    <span class="co"># The recommended way.</span></span></code></pre>
+<span><span class="fu">as.numeric</span><span class="op">(</span><span class="fu">levels</span><span class="op">(</span><span class="va">year_fct</span><span class="op">)</span><span class="op">)</span><span class="op">[</span><span class="va">year_fct</span><span class="op">]</span>    <span class="co"># Works!</span></span></code></pre>
 </div>
-<p>Notice that in the <code>levels()</code> approach, three important
-steps occur:</p>
+<p>Notice the three important steps:</p>
 <ul>
 <li>We obtain all the factor levels using
 <code>levels(year_fct)</code>
@@ -2453,21 +2166,21 @@ the vector <code>year_fct</code> inside the square brackets</li>
 <code>plot()</code> function to get a quick glance at the number of
 observations represented by each factor level. Let’s look at the number
 of males and females captured over the course of the experiment:</p>
-<div class="codewrapper sourceCode" id="cb27">
+<div class="codewrapper sourceCode" id="cb23">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">## bar plot of the number of females and males captured during the experiment:</span></span>
-<span><span class="fu">plot</span><span class="op">(</span><span class="va">surveys</span><span class="op">$</span><span class="va">sex</span><span class="op">)</span></span></code></pre>
+<span><span class="fu">plot</span><span class="op">(</span><span class="va">surveys</span><span class="op">$</span><span class="va">sex</span><span class="op">)</span> <span class="co">#results may look different if you didn't convert to a factor earlier</span></span></code></pre>
 </div>
-<figure><img src="fig/02-starting-with-data-rendered-unnamed-chunk-27-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>However, as we saw when we used <code>summary(surveys$sex)</code>,
+<figure><img src="fig/02-starting-with-data-rendered-unnamed-chunk-23-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>However, as we saw when we used <code>summary(surveys$sex)</code>,
 there are about 1700 individuals for which the sex information hasn’t
 been recorded. To show them in the plot, we can turn the missing values
 into a factor level with the <code>addNA()</code> function. We will also
 have to give the new factor level a label. We are going to work with a
 copy of the <code>sex</code> column, so we’re not modifying the working
 copy of the data frame:</p>
-<div class="codewrapper sourceCode" id="cb28">
+<div class="codewrapper sourceCode" id="cb24">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2479,7 +2192,7 @@ copy of the data frame:</p>
 </h3>
 <pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] "F" "M"</span></span></code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb30">
+<div class="codewrapper sourceCode" id="cb26">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2491,7 +2204,7 @@ copy of the data frame:</p>
 </h3>
 <pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] "F" "M" NA</span></span></code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb32">
+<div class="codewrapper sourceCode" id="cb28">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2503,7 +2216,7 @@ copy of the data frame:</p>
 <pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] M    M    &lt;NA&gt; &lt;NA&gt; &lt;NA&gt; &lt;NA&gt;</span></span>
 <span><span class="co">#&gt; Levels: F M &lt;NA&gt;</span></span></code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb34">
+<div class="codewrapper sourceCode" id="cb30">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2515,7 +2228,7 @@ copy of the data frame:</p>
 </h3>
 <pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] "F"            "M"            "undetermined"</span></span></code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb36">
+<div class="codewrapper sourceCode" id="cb32">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2529,12 +2242,12 @@ copy of the data frame:</p>
 <span><span class="co">#&gt; Levels: F M undetermined</span></span></code></pre>
 </div>
 <p>Now we can plot the data again, using <code>plot(sex)</code>.</p>
-<figure><img src="fig/02-starting-with-data-rendered-unnamed-chunk-29-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="challenge-3" class="callout challenge">
+<figure><img src="fig/02-starting-with-data-rendered-unnamed-chunk-25-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="challenge-1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-3" class="callout-inner">
-<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge-3"></a>
+<div id="challenge-1" class="callout-inner">
+<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge-1"></a>
 </h3>
 <div class="callout-content">
 <ul>
@@ -2546,16 +2259,16 @@ recreate the barplot such that “undetermined” is first (before
 </div>
 </div>
 </div>
-<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb38">
+<div class="codewrapper sourceCode" id="cb34">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2563,70 +2276,33 @@ recreate the barplot such that “undetermined” is first (before
 <span><span class="va">sex</span> <span class="op">&lt;-</span> <span class="fu">factor</span><span class="op">(</span><span class="va">sex</span>, levels <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="st">"undetermined"</span>, <span class="st">"female"</span>, <span class="st">"male"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="fu">plot</span><span class="op">(</span><span class="va">sex</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="fig/02-starting-with-data-rendered-unnamed-chunk-30-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure>
+<figure><img src="fig/02-starting-with-data-rendered-unnamed-chunk-26-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure>
 </div>
 </div>
 </div>
 </div>
-<div id="challenge-4" class="callout discussion">
+<div id="type-conversion" class="callout callout">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="challenge-4" class="callout-inner">
-<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge-4"></a>
+<div id="type-conversion" class="callout-inner">
+<h3 class="callout-title">Type conversion<a class="anchor" aria-label="anchor" href="#type-conversion"></a>
 </h3>
 <div class="callout-content">
-<ol style="list-style-type: decimal">
-<li>We have seen how data frames are created when using
-<code>read_csv()</code>, but they can also be created by hand with the
-<code>data.frame()</code> function. There are a few mistakes in this
-hand-crafted <code>data.frame</code>. Can you spot and fix them? Don’t
-hesitate to experiment!</li>
-</ol>
-<div class="codewrapper sourceCode" id="cb39">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>animal_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">animal =</span> <span class="fu">c</span>(dog, cat, sea cucumber, sea urchin),</span>
-<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">feel =</span> <span class="fu">c</span>(<span class="st">"furry"</span>, <span class="st">"squishy"</span>, <span class="st">"spiny"</span>),</span>
-<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>          <span class="at">weight =</span> <span class="fu">c</span>(<span class="dv">45</span>, <span class="dv">8</span> <span class="fl">1.1</span>, <span class="fl">0.8</span>)</span>
-<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>          )</span></code></pre>
-</div>
-<ol start="2" style="list-style-type: decimal">
-<li>Can you predict the class for each of the columns in the following
-example? Check your guesses using
-<code>str(country_climate)</code>:</li>
-</ol>
-<ul>
-<li>Are they what you expected? Why? Why not?</li>
-<li>What would you need to change to ensure that each column had the
-accurate data type?</li>
-</ul>
-<div class="codewrapper sourceCode" id="cb40">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">country_climate</span> <span class="op">&lt;-</span> <span class="fu">data.frame</span><span class="op">(</span></span>
-<span>       country <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="st">"Canada"</span>, <span class="st">"Panama"</span>, <span class="st">"South Africa"</span>, <span class="st">"Australia"</span><span class="op">)</span>,</span>
-<span>       climate <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="st">"cold"</span>, <span class="st">"hot"</span>, <span class="st">"temperate"</span>, <span class="st">"hot/temperate"</span><span class="op">)</span>,</span>
-<span>       temperature <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="fl">10</span>, <span class="fl">30</span>, <span class="fl">18</span>, <span class="st">"15"</span><span class="op">)</span>,</span>
-<span>       northern_hemisphere <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="cn">TRUE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="st">"FALSE"</span><span class="op">)</span>,</span>
-<span>       has_kangaroo <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="fl">1</span><span class="op">)</span></span>
-<span>       <span class="op">)</span></span></code></pre>
-</div>
-</div>
-</div>
-</div>
-<p>The automatic conversion of data type is sometimes a blessing,
-sometimes an annoyance. Be aware that it exists, learn the rules, and
-double check that data you import in R are of the correct type within
-your data frame. If not, use it to your advantage to detect mistakes
-that might have been introduced during data entry (for instance, a
-letter in a column that should only contain numbers).</p>
+<p>Automatic conversion of data types when data frames are created is
+usually helpful, but be aware that it can cause unexpected results, for
+example when missing data in a numeric column are coded “missing” in the
+source data. Double check that data you import in R are of the correct
+type within your data frame. If not, use it to your advantage to detect
+mistakes that might have been introduced during data entry (for
+instance, a letter in a column that should only contain numbers).</p>
 <p>Learn more in this <a href="https://support.rstudio.com/hc/en-us/articles/218611977-Importing-Data-with-RStudio" class="external-link">RStudio
 tutorial</a></p>
 </div>
-</section><section id="formatting-dates"><h2 class="section-heading">Formatting dates<a class="anchor" aria-label="anchor" href="#formatting-dates"></a>
+</div>
+</div>
+</div>
+</section><section id="formatting-dates-optional"><h2 class="section-heading">Formatting dates (optional)<a class="anchor" aria-label="anchor" href="#formatting-dates-optional"></a>
 </h2>
 <hr class="half-width">
 <p>A common issue that new (and experienced!) R users have is converting
@@ -2635,7 +2311,7 @@ One way to store date information is to store each component of the date
 in a separate column. Using <code>str()</code>, we can confirm that our
 data frame does indeed have a separate column for day, month, and year,
 and that each of these columns contains integer values.</p>
-<div class="codewrapper sourceCode" id="cb41">
+<div class="codewrapper sourceCode" id="cb35">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2653,7 +2329,7 @@ in most data analyses) get loaded.
 core tidyverse, so you have to load it explicitly with
 <code><a href="https://lubridate.tidyverse.org" class="external-link">library(lubridate)</a></code></p>
 <p>Start by loading the required package:</p>
-<div class="codewrapper sourceCode" id="cb42">
+<div class="codewrapper sourceCode" id="cb36">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2671,7 +2347,7 @@ recognized by R as being a date and can be manipulated as such. The
 argument that the function requires is flexible, but, as a best
 practice, is a character vector formatted as “YYYY-MM-DD”.</p>
 <p>Let’s create a date object and inspect the structure:</p>
-<div class="codewrapper sourceCode" id="cb43">
+<div class="codewrapper sourceCode" id="cb37">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2680,7 +2356,7 @@ practice, is a character vector formatted as “YYYY-MM-DD”.</p>
 </div>
 <p>Now let’s paste the year, month, and day separately - we get the same
 result:</p>
-<div class="codewrapper sourceCode" id="cb44">
+<div class="codewrapper sourceCode" id="cb38">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2692,7 +2368,7 @@ result:</p>
 vector from the <code>year</code>, <code>month</code>, and
 <code>day</code> columns of <code>surveys</code> using
 <code>paste()</code>:</p>
-<div class="codewrapper sourceCode" id="cb45">
+<div class="codewrapper sourceCode" id="cb39">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2700,7 +2376,7 @@ vector from the <code>year</code>, <code>month</code>, and
 </div>
 <p>This character vector can be used as the argument for
 <code>ymd()</code>:</p>
-<div class="codewrapper sourceCode" id="cb46">
+<div class="codewrapper sourceCode" id="cb40">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2717,7 +2393,7 @@ function has returned <code>NA</code>, which means they are treated as
 missing values. We will deal with this problem later, but first we add
 the resulting <code>Date</code> vector to the <code>surveys</code> data
 frame as a new column called <code>date</code>:</p>
-<div class="codewrapper sourceCode" id="cb48">
+<div class="codewrapper sourceCode" id="cb42">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2728,7 +2404,7 @@ frame as a new column called <code>date</code>:</p>
 </h3>
 <pre class="warning" tabindex="0"><code><span><span class="co">#&gt; Warning: 129 failed to parse.</span></span></code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb50">
+<div class="codewrapper sourceCode" id="cb44">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2736,7 +2412,7 @@ frame as a new column called <code>date</code>:</p>
 </div>
 <p>Let’s make sure everything worked correctly. One way to inspect the
 new column is to use <code>summary()</code>:</p>
-<div class="codewrapper sourceCode" id="cb51">
+<div class="codewrapper sourceCode" id="cb45">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2757,7 +2433,7 @@ them with what we learned about subsetting data frames earlier, we can
 extract the columns “year,”month”, “day” from the records that have
 <code>NA</code> in our new column <code>date</code>. We will also use
 <code>head()</code> so we don’t clutter the output:</p>
-<div class="codewrapper sourceCode" id="cb53">
+<div class="codewrapper sourceCode" id="cb47">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -2804,9 +2480,9 @@ document the error and the corrections (if any) that you apply to your
 data.</p>
 </section></section><section id="aio-03-dplyr"><p>Content from <a href="03-dplyr.html">Manipulating, analyzing and exporting data with tidyverse</a></p>
 <hr>
-<p> Last updated on 2023-08-15 | 
+<p> Last updated on 2023-09-29 | 
         
-        <a href="https://github.com/datacarpentry/R-ecology-lesson/edit/main/episodes/03-dplyr.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/ndporter/R-ecology-lesson-whitehead-f23/edit/main/episodes/03-dplyr.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -2851,25 +2527,18 @@ load the package.</p>
 <h2 id="what-are-dplyr-and-tidyr">What are <strong><code>dplyr</code></strong> and
 <strong><code>tidyr</code></strong>?<a class="anchor" aria-label="anchor" href="#what-are-dplyr-and-tidyr"></a>
 </h2>
-<p>The package <strong><code>dplyr</code></strong> provides helper tools
-for the most common data manipulation tasks. It is built to work
-directly with data frames, with many common tasks optimized by being
-written in a compiled language (C++). An additional feature is the
-ability to work directly with data stored in an external database. The
-benefits of doing this are that the data can be managed natively in a
-relational database, queries can be conducted on that database, and only
-the results of the query are returned.</p>
-<p>This addresses a common problem with R in that all operations are
-conducted in-memory and thus the amount of data you can work with is
-limited by available memory. The database connections essentially remove
-that limitation in that you can connect to a database of many hundreds
-of GB, conduct queries on it directly, and pull back into R only what
-you need for analysis.</p>
-<p>The package <strong><code>tidyr</code></strong> addresses the common
-problem of wanting to reshape your data for plotting and usage by
-different R functions. For example, sometimes we want data sets where we
-have one row per measurement. Other times we want a data frame where
-each measurement type has its own column, and rows are instead more
+<p><strong><code>dplyr</code></strong> provides helper tools for the
+most common data manipulation tasks. It is built to work directly with
+data frames, with many common tasks optimized. An additional feature is
+the ability to work directly with data stored in an external database.
+The benefits of doing this are that the data can be managed natively in
+a relational database, queries can be conducted on that database, and
+only the results of the query are returned.</p>
+<p><strong><code>tidyr</code></strong> addresses the common problem of
+wanting to reshape your data for plotting and usage by different R
+functions. For example, sometimes we want data sets where we have one
+row per measurement. Other times we want a data frame where each
+measurement type has its own column, and rows are instead more
 aggregated groups (e.g., a time period, an experimental unit like a plot
 or a batch number). Moving back and forth between these formats is
 non-trivial, and <strong><code>tidyr</code></strong> gives you tools for
@@ -3068,7 +2737,7 @@ collected before 1995 and retain only the columns <code>year</code>,
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3162,7 +2831,7 @@ to produce this data frame!</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3421,7 +3090,7 @@ surveyed?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb36">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3458,7 +3127,7 @@ mean, min, and max hindfoot length for each species (using
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb37">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3501,7 +3170,7 @@ and <code>weight</code>.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb38">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3708,7 +3377,7 @@ genera within a particular chunk of data. It’s a powerful function! See
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb46">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3758,7 +3427,7 @@ combination.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb49">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3771,9 +3440,9 @@ combination.</li>
 </div>
 </div>
 </div>
-<div id="challenge-3" class="callout discussion">
+<div id="challenge-3" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-3" class="callout-inner">
 <h3 class="callout-title">Challenge<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge-3"></a>
@@ -3794,7 +3463,6 @@ will be part of the reshape.</li>
 </div>
 </div>
 </div>
-<div class="blockquote">
 <div id="accordionSolution8" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
@@ -3802,7 +3470,7 @@ will be part of the reshape.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb50">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3815,6 +3483,14 @@ will be part of the reshape.</li>
 </div>
 </div>
 </div>
+<div id="challenge-3" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="challenge-3" class="callout-inner">
+<h3 class="callout-title">Challenge<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge-3"></a>
+</h3>
+<div class="callout-content">
 <ol start="4" style="list-style-type: decimal">
 <li>With this new data set, calculate the average of each
 <code>measurement</code> in each <code>year</code> for each different
@@ -3823,6 +3499,9 @@ set with a column for <code>hindfoot_length</code> and
 <code>weight</code>. <em>Hint</em>: You only need to specify the names
 and values columns for <code>pivot_wider()</code>.</li>
 </ol>
+</div>
+</div>
+</div>
 <div id="accordionSolution9" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution9" aria-expanded="false" aria-controls="collapseSolution9">
@@ -3830,7 +3509,7 @@ and values columns for <code>pivot_wider()</code>.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution9" class="accordion-collapse collapse" aria-labelledby="headingSolution9" data-bs-parent="#accordionSolution9">
+<div id="collapseSolution9" class="accordion-collapse collapse" data-bs-parent="#accordionSolution9" aria-labelledby="headingSolution9">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb51">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3846,7 +3525,6 @@ and values columns for <code>pivot_wider()</code>.</li>
 </h3>
 <pre class="output" tabindex="0"><code><span><span class="co">#&gt; `summarise()` has grouped output by 'year', 'measurement'. You can override</span></span>
 <span><span class="co">#&gt; using the `.groups` argument.</span></span></code></pre>
-</div>
 </div>
 </div>
 </div>
@@ -3923,9 +3601,9 @@ common species:</p>
 </div>
 </div></section><section id="aio-04-visualization-ggplot2"><p>Content from <a href="04-visualization-ggplot2.html">Data visualization with ggplot2</a></p>
 <hr>
-<p> Last updated on 2023-08-15 | 
+<p> Last updated on 2023-09-29 | 
         
-        <a href="https://github.com/datacarpentry/R-ecology-lesson/edit/main/episodes/04-visualization-ggplot2.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/ndporter/R-ecology-lesson-whitehead-f23/edit/main/episodes/04-visualization-ggplot2.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -4475,42 +4153,21 @@ grouped by <code>year</code>, <code>genus</code>, and
 <span>  <span class="fu">geom_line</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">facet_wrap</span><span class="op">(</span>facets <span class="op">=</span>  <span class="fu">vars</span><span class="op">(</span><span class="va">genus</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="fig/04-visualization-ggplot2-rendered-facet-by-genus-and-sex-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>We can also facet both by sex and genus:</p>
-<div class="codewrapper sourceCode" id="cb30">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">yearly_sex_counts</span>,</span>
-<span>       mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span>, y <span class="op">=</span> <span class="va">n</span>, color <span class="op">=</span> <span class="va">sex</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">geom_line</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">facet_grid</span><span class="op">(</span>rows <span class="op">=</span> <span class="fu">vars</span><span class="op">(</span><span class="va">sex</span><span class="op">)</span>, cols <span class="op">=</span>  <span class="fu">vars</span><span class="op">(</span><span class="va">genus</span><span class="op">)</span><span class="op">)</span></span></code></pre>
+<figure><img src="fig/04-visualization-ggplot2-rendered-facet-by-genus-and-sex-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="note-on-older-code" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
 </div>
-<figure><img src="fig/04-visualization-ggplot2-rendered-average-weight-time-facet-both-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>You can also organise the panels only by rows (or only by
-columns):</p>
-<div class="codewrapper sourceCode" id="cb31">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+<div id="note-on-older-code" class="callout-inner">
+<h3 class="callout-title">Note on older code<a class="anchor" aria-label="anchor" href="#note-on-older-code"></a>
 </h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># One column, facet by rows</span></span>
-<span><span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">yearly_sex_counts</span>,</span>
-<span>       mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span>, y <span class="op">=</span> <span class="va">n</span>, color <span class="op">=</span> <span class="va">sex</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">geom_line</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">facet_grid</span><span class="op">(</span>rows <span class="op">=</span> <span class="fu">vars</span><span class="op">(</span><span class="va">genus</span><span class="op">)</span><span class="op">)</span></span></code></pre>
-</div>
-<figure><img src="fig/04-visualization-ggplot2-rendered-average-weight-time-facet-sex-rows-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div class="codewrapper sourceCode" id="cb32">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># One row, facet by column</span></span>
-<span><span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">yearly_sex_counts</span>,</span>
-<span>       mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span>, y <span class="op">=</span> <span class="va">n</span>, color <span class="op">=</span> <span class="va">sex</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">geom_line</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">facet_grid</span><span class="op">(</span>cols <span class="op">=</span> <span class="fu">vars</span><span class="op">(</span><span class="va">genus</span><span class="op">)</span><span class="op">)</span></span></code></pre>
-</div>
-<figure><img src="fig/04-visualization-ggplot2-rendered-average-weight-time-facet-sex-columns-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p><strong>Note:</strong> <code>ggplot2</code> before version 3.0.0 used
-formulas to specify how plots are faceted. If you encounter
+<div class="callout-content">
+<p><code>ggplot2</code> before version 3.0.0 used formulas to specify
+how plots are faceted. If you encounter
 <code>facet_grid</code>/<code>wrap(...)</code> code containing
 <code>~</code>, please read <a href="https://ggplot2.tidyverse.org/news/#tidy-evaluation" class="external-link">https://ggplot2.tidyverse.org/news/#tidy-evaluation</a>.</p>
+</div>
+</div>
+</div>
 </section><section id="ggplot2-themes"><h2 class="section-heading">
 <strong><code>ggplot2</code></strong> themes<a class="anchor" aria-label="anchor" href="#ggplot2-themes"></a>
 </h2>
@@ -4522,7 +4179,7 @@ However, there are pre-loaded themes available that change the overall
 appearance of the graph without much effort.</p>
 <p>For example, we can change our previous graph to have a simpler white
 background using the <code>theme_bw()</code> function:</p>
-<div class="codewrapper sourceCode" id="cb33">
+<div class="codewrapper sourceCode" id="cb30">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -4563,7 +4220,7 @@ average weight of each species changes through the years.</p>
 </button>
 <div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb34">
+<div class="codewrapper sourceCode" id="cb31">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -4577,7 +4234,7 @@ average weight of each species changes through the years.</p>
 <pre class="output" tabindex="0"><code><span><span class="co">#&gt; `summarise()` has grouped output by 'year'. You can override using the</span></span>
 <span><span class="co">#&gt; `.groups` argument.</span></span></code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb36">
+<div class="codewrapper sourceCode" id="cb33">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -4591,14 +4248,14 @@ average weight of each species changes through the years.</p>
 </div>
 </div>
 </div>
-</section><section id="customization"><h2 class="section-heading">Customization<a class="anchor" aria-label="anchor" href="#customization"></a>
+</section><section id="customization-optional"><h2 class="section-heading">Customization (optional)<a class="anchor" aria-label="anchor" href="#customization-optional"></a>
 </h2>
 <hr class="half-width">
 <p>Take a look at the <a href="https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf" class="external-link"><strong><code>ggplot2</code></strong>
 cheat sheet</a>, and think of ways you could improve the plot.</p>
 <p>Now, let’s change names of axes to something more informative than
 ‘year’ and ‘n’ and add a title to the figure:</p>
-<div class="codewrapper sourceCode" id="cb37">
+<div class="codewrapper sourceCode" id="cb34">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -4613,7 +4270,7 @@ cheat sheet</a>, and think of ways you could improve the plot.</p>
 <figure><img src="fig/04-visualization-ggplot2-rendered-number-species-year-with-right-labels-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>The axes have more informative names, but their readability can be
 improved by increasing the font size. This can be done with the generic
 <code>theme()</code> function:</p>
-<div class="codewrapper sourceCode" id="cb38">
+<div class="codewrapper sourceCode" id="cb35">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -4637,7 +4294,7 @@ overlap. You can use a 90 degree angle, or experiment to find the
 appropriate angle for diagonally oriented labels. We can also modify the
 facet label text (<code>strip.text</code>) to italicize the genus
 names:</p>
-<div class="codewrapper sourceCode" id="cb39">
+<div class="codewrapper sourceCode" id="cb36">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -4656,7 +4313,7 @@ names:</p>
 <figure><img src="fig/04-visualization-ggplot2-rendered-number-species-year-with-theme-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>If you like the changes you created better than the default theme,
 you can save them as an object to be able to easily apply them to other
 plots you may create:</p>
-<div class="codewrapper sourceCode" id="cb40">
+<div class="codewrapper sourceCode" id="cb37">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -4692,45 +4349,6 @@ labels?</li>
 </div>
 </div>
 </div>
-</section><section id="arranging-plots"><h2 class="section-heading">Arranging plots<a class="anchor" aria-label="anchor" href="#arranging-plots"></a>
-</h2>
-<hr class="half-width">
-<p>Faceting is a great tool for splitting one plot into multiple plots,
-but sometimes you may want to produce a single figure that contains
-multiple plots using different variables or even different data frames.
-The <strong><code>patchwork</code></strong> package allows us to combine
-separate ggplots into a single figure while keeping everything aligned
-properly. Like most R packages, we can install <code>patchwork</code>
-from CRAN, the R package repository:</p>
-<div class="codewrapper sourceCode" id="cb41">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">install.packages</span><span class="op">(</span><span class="st">"patchwork"</span><span class="op">)</span></span></code></pre>
-</div>
-<p>After you have loaded the <code>patchwork</code> package you can use
-<code>+</code> to place plots next to each other, <code>/</code> to
-arrange them vertically, and <code>plot_layout()</code> to determine how
-much space each plot uses:</p>
-<div class="codewrapper sourceCode" id="cb42">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw">library</span><span class="op">(</span><span class="va">patchwork</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">plot_weight</span> <span class="op">&lt;-</span> <span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">surveys_complete</span>, <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">species_id</span>, y <span class="op">=</span> <span class="va">weight</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">geom_boxplot</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">labs</span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Species"</span>, y <span class="op">=</span> <span class="fu">expression</span><span class="op">(</span><span class="va">log</span><span class="op">[</span><span class="fl">10</span><span class="op">]</span><span class="op">(</span><span class="va">Weight</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">scale_y_log10</span><span class="op">(</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">plot_count</span> <span class="op">&lt;-</span> <span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">yearly_counts</span>, <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span>, y <span class="op">=</span> <span class="va">n</span>, color <span class="op">=</span> <span class="va">genus</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">geom_line</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">labs</span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Year"</span>, y <span class="op">=</span> <span class="st">"Abundance"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">plot_weight</span> <span class="op">/</span> <span class="va">plot_count</span> <span class="op">+</span> <span class="fu">plot_layout</span><span class="op">(</span>heights <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="fl">3</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span></span></code></pre>
-</div>
-<figure><img src="fig/04-visualization-ggplot2-rendered-patchwork-example-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>You can also use parentheses <code>()</code> to create more complex
-layouts. There are many useful examples on the <a href="https://patchwork.data-imaginist.com/" class="external-link">patchwork website</a></p>
 </section><section id="exporting-plots"><h2 class="section-heading">Exporting plots<a class="anchor" aria-label="anchor" href="#exporting-plots"></a>
 </h2>
 <hr class="half-width">
@@ -4745,7 +4363,7 @@ additional themes.</p>
 easily change the dimension and resolution of your plot by adjusting the
 appropriate arguments (<code>width</code>, <code>height</code> and
 <code>dpi</code>):</p>
-<div class="codewrapper sourceCode" id="cb43">
+<div class="codewrapper sourceCode" id="cb38">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -4762,831 +4380,10 @@ appropriate arguments (<code>width</code>, <code>height</code> and
 <span>          axis.text.y <span class="op">=</span> <span class="fu">element_text</span><span class="op">(</span>colour <span class="op">=</span> <span class="st">"grey20"</span>, size <span class="op">=</span> <span class="fl">12</span><span class="op">)</span>,</span>
 <span>          text <span class="op">=</span> <span class="fu">element_text</span><span class="op">(</span>size <span class="op">=</span> <span class="fl">16</span><span class="op">)</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu">ggsave</span><span class="op">(</span><span class="st">"name_of_file.png"</span>, <span class="va">my_plot</span>, width <span class="op">=</span> <span class="fl">15</span>, height <span class="op">=</span> <span class="fl">10</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">## This also works for plots combined with patchwork</span></span>
-<span><span class="va">plot_combined</span> <span class="op">&lt;-</span> <span class="va">plot_weight</span> <span class="op">/</span> <span class="va">plot_count</span> <span class="op">+</span> <span class="fu">plot_layout</span><span class="op">(</span>heights <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="fl">3</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu">ggsave</span><span class="op">(</span><span class="st">"plot_combined.png"</span>, <span class="va">plot_combined</span>, width <span class="op">=</span> <span class="fl">10</span>, dpi <span class="op">=</span> <span class="fl">300</span><span class="op">)</span></span></code></pre>
+<span><span class="fu">ggsave</span><span class="op">(</span><span class="st">"name_of_file.png"</span>, <span class="va">my_plot</span>, width <span class="op">=</span> <span class="fl">15</span>, height <span class="op">=</span> <span class="fl">10</span><span class="op">)</span></span></code></pre>
 </div>
 <p>Note: The parameters <code>width</code> and <code>height</code> also
 determine the font size in the saved plot.</p>
-</section></section><section id="aio-05-r-and-databases"><p>Content from <a href="05-r-and-databases.html">SQL databases and R</a></p>
-<hr>
-<p> Last updated on 2023-08-15 | 
-        
-        <a href="https://github.com/datacarpentry/R-ecology-lesson/edit/main/episodes/05-r-and-databases.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<hr>
-<hr>
-<section id="introduction"><h2 class="section-heading">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
-</h2>
-<hr class="half-width">
-<p>So far, we have dealt with small datasets that easily fit into your
-computer’s memory. But what about datasets that are too large for your
-computer to handle as a whole? In this case, storing the data outside of
-R and organizing it in a database is helpful. Connecting to the database
-allows you to retrieve only the chunks needed for the current
-analysis.</p>
-<p>Even better, many large datasets are already available in public or
-private databases. You can query them without having to download the
-data first.</p>
-<p>R can connect to almost any existing database type. Most common
-database types have R packages that allow you to connect to them (e.g.,
-<strong><code>RSQLite</code></strong>, RMySQL, etc). Furthermore, the <a href="https://cran.r-project.org/web/packages/dplyr/index.html" class="external-link"><strong><code>dplyr</code></strong></a>
-package you used in the previous chapter, in conjunction with <a href="https://cran.r-project.org/package=dbplyr" class="external-link"><strong><code>dbplyr</code></strong></a>
-supports connecting to the widely-used open source databases <a href="https://sqlite.org/" class="external-link">sqlite</a>, <a href="https://www.mysql.com/" class="external-link">mysql</a> and <a href="https://www.postgresql.org/" class="external-link">postgresql</a>, as well as Google’s
-<a href="https://cloud.google.com/bigquery/" class="external-link">bigquery</a>, and it can
-also be extended to other database types (a <a href="https://cran.r-project.org/web/packages/dbplyr/vignettes/new-backend.html" class="external-link">vignette</a>
-in the <strong><code>dplyr</code></strong> package explains how to do
-it). RStudio has created <a href="https://db.rstudio.com/" class="external-link">a website</a>
-that provides documentation and best practices to work on database
-interfaces.</p>
-<p>Interfacing with databases using <strong><code>dplyr</code></strong>
-focuses on retrieving and analyzing datasets by generating
-<code>SELECT</code> SQL statements, but it doesn’t modify the database
-itself. <strong><code>dplyr</code></strong> does not offer functions to
-<code>UPDATE</code> or <code>DELETE</code> entries. If you need these
-functionalities, you will need to use additional R packages (e.g.,
-<strong><code>RSQLite</code></strong>). Here we will demonstrate how to
-interact with a database using <strong><code>dplyr</code></strong>,
-using both the <strong><code>dplyr</code></strong>’s verb syntax and the
-SQL syntax.</p>
-<div class="section level3">
-<h3 id="the-portal_mammals-database">The portal_mammals database<a class="anchor" aria-label="anchor" href="#the-portal_mammals-database"></a>
-</h3>
-<p>We will continue to explore the <code>surveys</code> data you are
-already familiar with from previous lessons. First, we are going to
-install the <strong><code>dbplyr</code></strong> package:</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">install.packages</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="st">"dbplyr"</span>, <span class="st">"RSQLite"</span><span class="op">)</span><span class="op">)</span></span></code></pre>
-</div>
-<p>The SQLite database is contained in a single file
-<code>portal_mammals.sqlite</code> that you generated during <a href="https://datacarpentry.org/sql-ecology-lesson/00-sql-introduction/index.html" class="external-link">the
-SQL lesson</a>. If you don’t have it, you can download it from Figshare
-into the <code>data_raw</code> subdirectory using:</p>
-<div class="codewrapper sourceCode" id="cb2">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">dir.create</span><span class="op">(</span><span class="st">"data_raw"</span>, showWarnings <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
-<span><span class="fu">download.file</span><span class="op">(</span>url <span class="op">=</span> <span class="st">"https://ndownloader.figshare.com/files/2292171"</span>,</span>
-<span>              destfile <span class="op">=</span> <span class="st">"data_raw/portal_mammals.sqlite"</span>, mode <span class="op">=</span> <span class="st">"wb"</span><span class="op">)</span></span></code></pre>
-</div>
-</div>
-</section><section id="connecting-to-databases"><h2 class="section-heading">Connecting to databases<a class="anchor" aria-label="anchor" href="#connecting-to-databases"></a>
-</h2>
-<hr class="half-width">
-<p>We can point R to this database using:</p>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw">library</span><span class="op">(</span><span class="va">dplyr</span><span class="op">)</span></span>
-<span><span class="kw">library</span><span class="op">(</span><span class="va">dbplyr</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; Attaching package: 'dbplyr'</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; The following objects are masked from 'package:dplyr':</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;     ident, sql</span></span></code></pre>
-</div>
-<div class="codewrapper sourceCode" id="cb6">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">mammals</span> <span class="op">&lt;-</span> <span class="fu">DBI</span><span class="fu">::</span><span class="fu">dbConnect</span><span class="op">(</span><span class="fu">RSQLite</span><span class="fu">::</span><span class="fu">SQLite</span><span class="op">(</span><span class="op">)</span>, <span class="st">"data_raw/portal_mammals.sqlite"</span><span class="op">)</span></span></code></pre>
-</div>
-<p>This command uses 2 packages that helps
-<strong><code>dbplyr</code></strong> and
-<strong><code>dplyr</code></strong> talk to the SQLite database.
-<strong><code>DBI</code></strong> is not something that you’ll use
-directly as a user. It allows R to send commands to databases
-irrespective of the database management system used. The
-<strong><code>RSQLite</code></strong> package allows R to interface with
-SQLite databases.</p>
-<p>This command does not load the data into the R session (as the
-<code>read_csv()</code> function did). Instead, it merely instructs R to
-connect to the <code>SQLite</code> database contained in the
-<code>portal_mammals.sqlite</code> file.</p>
-<p>Using a similar approach, you could connect to many other database
-management systems that are supported by R including MySQL, PostgreSQL,
-BigQuery, etc.</p>
-<p>Let’s take a closer look at the <code>mammals</code> database we just
-connected to:</p>
-<div class="codewrapper sourceCode" id="cb7">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">src_dbi</span><span class="op">(</span><span class="va">mammals</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; src:  sqlite 3.41.2 [/home/runner/work/R-ecology-lesson/R-ecology-lesson/site/built/data_raw/portal_mammals.sqlite]</span></span>
-<span><span class="co">#&gt; tbls: plots, species, surveys</span></span></code></pre>
-</div>
-<p>Just like a spreadsheet with multiple worksheets, a SQLite database
-can contain multiple tables. In this case three of them are listed in
-the <code>tbls</code> row in the output above:</p>
-<ul>
-<li>plots</li>
-<li>species</li>
-<li>surveys</li>
-</ul>
-<p>Now that we know we can connect to the database, let’s explore how to
-get the data from its tables into R.</p>
-<div class="section level3">
-<h3 id="querying-the-database-with-the-sql-syntax">Querying the database with the SQL syntax<a class="anchor" aria-label="anchor" href="#querying-the-database-with-the-sql-syntax"></a>
-</h3>
-<p>To connect to tables within a database, you can use the
-<code>tbl()</code> function from <strong><code>dplyr</code></strong>.
-This function can be used to send SQL queries to the database. To
-demonstrate this functionality, let’s select the columns “year”,
-“species_id”, and “plot_id” from the <code>surveys</code> table:</p>
-<div class="codewrapper sourceCode" id="cb9">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">tbl</span><span class="op">(</span><span class="va">mammals</span>, <span class="fu">sql</span><span class="op">(</span><span class="st">"SELECT year, species_id, plot_id FROM surveys"</span><span class="op">)</span><span class="op">)</span></span></code></pre>
-</div>
-<p>With this approach you can use any of the SQL queries we have seen in
-the database lesson.</p>
-</div>
-<div class="section level3">
-<h3 id="querying-the-database-with-the-dplyr-syntax">Querying the database with the dplyr syntax<a class="anchor" aria-label="anchor" href="#querying-the-database-with-the-dplyr-syntax"></a>
-</h3>
-<p>One of the strengths of <strong><code>dplyr</code></strong> is that
-the same operation can be done using
-<strong><code>dplyr</code></strong>’s verbs instead of writing SQL.
-First, we select the table on which to do the operations by creating the
-<code>surveys</code> object, and then we use the standard
-<strong><code>dplyr</code></strong> syntax as if it were a data
-frame:</p>
-<div class="codewrapper sourceCode" id="cb10">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">surveys</span> <span class="op">&lt;-</span> <span class="fu">tbl</span><span class="op">(</span><span class="va">mammals</span>, <span class="st">"surveys"</span><span class="op">)</span></span>
-<span><span class="va">surveys</span> <span class="op">%&gt;%</span></span>
-<span>    <span class="fu">select</span><span class="op">(</span><span class="va">year</span>, <span class="va">species_id</span>, <span class="va">plot_id</span><span class="op">)</span></span></code></pre>
-</div>
-<p>In this case, the <code>surveys</code> object behaves like a data
-frame. Several functions that can be used with data frames can also be
-used on tables from a database. For instance, the <code>head()</code>
-function can be used to check the first 10 rows of the table:</p>
-<div class="codewrapper sourceCode" id="cb11">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">head</span><span class="op">(</span><span class="va">surveys</span>, n <span class="op">=</span> <span class="fl">10</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; # Source:   SQL [10 x 9]</span></span>
-<span><span class="co">#&gt; # Database: sqlite 3.41.2 [/home/runner/work/R-ecology-lesson/R-ecology-lesson/site/built/data_raw/portal_mammals.sqlite]</span></span>
-<span><span class="co">#&gt;    record_id month   day  year plot_id species_id sex   hindfoot_length weight</span></span>
-<span><span class="co">#&gt;        &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt;   &lt;int&gt; &lt;chr&gt;      &lt;chr&gt;           &lt;int&gt;  &lt;int&gt;</span></span>
-<span><span class="co">#&gt;  1         1     7    16  1977       2 NL         M                  32     NA</span></span>
-<span><span class="co">#&gt;  2         2     7    16  1977       3 NL         M                  33     NA</span></span>
-<span><span class="co">#&gt;  3         3     7    16  1977       2 DM         F                  37     NA</span></span>
-<span><span class="co">#&gt;  4         4     7    16  1977       7 DM         M                  36     NA</span></span>
-<span><span class="co">#&gt;  5         5     7    16  1977       3 DM         M                  35     NA</span></span>
-<span><span class="co">#&gt;  6         6     7    16  1977       1 PF         M                  14     NA</span></span>
-<span><span class="co">#&gt;  7         7     7    16  1977       2 PE         F                  NA     NA</span></span>
-<span><span class="co">#&gt;  8         8     7    16  1977       1 DM         M                  37     NA</span></span>
-<span><span class="co">#&gt;  9         9     7    16  1977       1 DM         F                  34     NA</span></span>
-<span><span class="co">#&gt; 10        10     7    16  1977       6 PF         F                  20     NA</span></span></code></pre>
-</div>
-<p>This output of the <code>head</code> command looks just like a
-regular <code>data.frame</code>: The table has 9 columns and the
-<code>head()</code> command shows us the first 10 rows. Note that the
-columns <code>plot_type</code>, <code>taxa</code>, <code>genus</code>,
-and <code>species</code> are missing. These are now located in the
-tables <code>plots</code> and <code>species</code> which we will join
-together in a moment.</p>
-<p>However, some functions don’t work quite as expected. For instance,
-let’s check how many rows there are in total using
-<code>nrow()</code>:</p>
-<div class="codewrapper sourceCode" id="cb13">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">nrow</span><span class="op">(</span><span class="va">surveys</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] NA</span></span></code></pre>
-</div>
-<p>That’s strange - R doesn’t know how many rows the
-<code>surveys</code> table contains - it returns <code>NA</code>
-instead. You might have already noticed that the first line of the
-<code>head()</code> output included <code>??</code> indicating that the
-number of rows wasn’t known.</p>
-<p>The reason for this behavior highlights a key difference between
-using <strong><code>dplyr</code></strong> on datasets in memory
-(e.g. loaded into your R session via <code>read_csv()</code>) and those
-provided by a database. To understand it, we take a closer look at how
-<strong><code>dplyr</code></strong> communicates with our SQLite
-database.</p>
-</div>
-<div class="section level3">
-<h3 id="sql-translation">SQL translation<a class="anchor" aria-label="anchor" href="#sql-translation"></a>
-</h3>
-<p>Relational databases typically use a special-purpose language, <a href="https://en.wikipedia.org/wiki/SQL" class="external-link">Structured Query Language
-(SQL)</a>, to manage and query data.</p>
-<p>For example, the following SQL query returns the first 10 rows from
-the <code>surveys</code> table:</p>
-<div class="codewrapper sourceCode" id="cb15">
-<h3 class="code-label">SQL<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode sql" tabindex="0"><code class="sourceCode sql"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> `surveys`</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="kw">LIMIT</span> <span class="dv">10</span></span></code></pre>
-</div>
-<p>Behind the scenes, <strong><code>dplyr</code></strong>:</p>
-<ol style="list-style-type: decimal">
-<li>translates your R code into SQL</li>
-<li>submits it to the database</li>
-<li>translates the database’s response into an R data frame</li>
-</ol>
-<p>To lift the curtain, we can use <strong><code>dplyr</code></strong>’s
-<code>show_query()</code> function to show which SQL commands are
-actually sent to the database:</p>
-<div class="codewrapper sourceCode" id="cb16">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">show_query</span><span class="op">(</span><span class="fu">head</span><span class="op">(</span><span class="va">surveys</span>, n <span class="op">=</span> <span class="fl">10</span><span class="op">)</span><span class="op">)</span></span></code></pre>
-</div>
-<p>The output shows the actual SQL query sent to the database; it
-matches our manually constructed <code>SELECT</code> statement
-above.</p>
-<p>Instead of having to formulate the SQL query ourselves - and having
-to mentally switch back and forth between R and SQL syntax - we can
-delegate this translation to <strong><code>dplyr</code></strong>. (You
-don’t even need to know SQL to interact with a database via
-<strong><code>dplyr</code></strong>!)</p>
-<p><strong><code>dplyr</code></strong>, in turn, doesn’t do the real
-work of subsetting the table, either. Instead, it merely sends the query
-to the database, waits for its response and returns it to us.</p>
-<p>That way, R never gets to see the full <code>surveys</code> table -
-and that’s why it could not tell us how many rows it contains. On the
-bright side, this allows us to work with large datasets - even too large
-to fit into our computer’s memory.</p>
-<p><strong><code>dplyr</code></strong> can translate many different
-query types into SQL allowing us to, e.g., <code>select()</code>
-specific columns, <code>filter()</code> rows, or join tables.</p>
-<p>To see this in action, let’s compose a few queries with
-<strong><code>dplyr</code></strong>.</p>
-</div>
-</section><section id="simple-database-queries"><h2 class="section-heading">Simple database queries<a class="anchor" aria-label="anchor" href="#simple-database-queries"></a>
-</h2>
-<hr class="half-width">
-<p>First, let’s only request rows of the <code>surveys</code> table in
-which <code>weight</code> is less than 5 and keep only the species_id,
-sex, and weight columns.</p>
-<div class="codewrapper sourceCode" id="cb17">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">surveys</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">filter</span><span class="op">(</span><span class="va">weight</span> <span class="op">&lt;</span> <span class="fl">5</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">select</span><span class="op">(</span><span class="va">species_id</span>, <span class="va">sex</span>, <span class="va">weight</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; # Source:   SQL [?? x 3]</span></span>
-<span><span class="co">#&gt; # Database: sqlite 3.41.2 [/home/runner/work/R-ecology-lesson/R-ecology-lesson/site/built/data_raw/portal_mammals.sqlite]</span></span>
-<span><span class="co">#&gt;    species_id sex   weight</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;      &lt;chr&gt;  &lt;int&gt;</span></span>
-<span><span class="co">#&gt;  1 PF         M          4</span></span>
-<span><span class="co">#&gt;  2 PF         F          4</span></span>
-<span><span class="co">#&gt;  3 PF         &lt;NA&gt;       4</span></span>
-<span><span class="co">#&gt;  4 PF         F          4</span></span>
-<span><span class="co">#&gt;  5 PF         F          4</span></span>
-<span><span class="co">#&gt;  6 RM         M          4</span></span>
-<span><span class="co">#&gt;  7 RM         F          4</span></span>
-<span><span class="co">#&gt;  8 RM         M          4</span></span>
-<span><span class="co">#&gt;  9 RM         M          4</span></span>
-<span><span class="co">#&gt; 10 RM         M          4</span></span>
-<span><span class="co">#&gt; # ℹ more rows</span></span></code></pre>
-</div>
-<p>Executing this command will return a table with 10 rows and the
-requested <code>species_id</code>, <code>sex</code> and
-<code>weight</code> columns. Great!</p>
-<p>… but wait, why are there only 10 rows?</p>
-<p>The last line:</p>
-<pre><code><span><span class="co"># ... with more rows</span></span></code></pre>
-<p>indicates that there are more results that fit our filtering
-criterion. Why was R lazy and only retrieved 10 of them?</p>
-</section><section id="laziness"><h2 class="section-heading">Laziness<a class="anchor" aria-label="anchor" href="#laziness"></a>
-</h2>
-<hr class="half-width">
-<p>Hadley Wickham, the author of <strong><code>dplyr</code></strong> <a href="https://cran.r-project.org/web/packages/dbplyr/vignettes/dbplyr.html" class="external-link">explains</a>:</p>
-<div class="blockquote">
-<p>When working with databases, <strong><code>dplyr</code></strong>
-tries to be as lazy as possible:</p>
-<ul>
-<li>It never pulls data into R unless you explicitly ask for it.</li>
-<li>It delays doing any work until the last possible moment - it
-collects together everything you want to do and then sends it to the
-database in one step.</li>
-</ul>
-</div>
-<p>When you construct a <strong><code>dplyr</code></strong> query, you
-can connect multiple verbs into a single pipeline. For example, we
-combined the <code>filter()</code> and <code>select()</code> verbs using
-the <code>%&gt;%</code> pipe.</p>
-<p>If we wanted to, we could add on even more steps, e.g. remove the
-<code>sex</code> column in an additional <code>select</code> call:</p>
-<div class="codewrapper sourceCode" id="cb20">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">data_subset</span> <span class="op">&lt;-</span> <span class="va">surveys</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">filter</span><span class="op">(</span><span class="va">weight</span> <span class="op">&lt;</span> <span class="fl">5</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">select</span><span class="op">(</span><span class="va">species_id</span>, <span class="va">sex</span>, <span class="va">weight</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">data_subset</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">select</span><span class="op">(</span><span class="op">-</span><span class="va">sex</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; # Source:   SQL [?? x 2]</span></span>
-<span><span class="co">#&gt; # Database: sqlite 3.41.2 [/home/runner/work/R-ecology-lesson/R-ecology-lesson/site/built/data_raw/portal_mammals.sqlite]</span></span>
-<span><span class="co">#&gt;    species_id weight</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;       &lt;int&gt;</span></span>
-<span><span class="co">#&gt;  1 PF              4</span></span>
-<span><span class="co">#&gt;  2 PF              4</span></span>
-<span><span class="co">#&gt;  3 PF              4</span></span>
-<span><span class="co">#&gt;  4 PF              4</span></span>
-<span><span class="co">#&gt;  5 PF              4</span></span>
-<span><span class="co">#&gt;  6 RM              4</span></span>
-<span><span class="co">#&gt;  7 RM              4</span></span>
-<span><span class="co">#&gt;  8 RM              4</span></span>
-<span><span class="co">#&gt;  9 RM              4</span></span>
-<span><span class="co">#&gt; 10 RM              4</span></span>
-<span><span class="co">#&gt; # ℹ more rows</span></span></code></pre>
-</div>
-<p>Just like the first <code>select(species_id, sex, weight)</code>
-call, the <code>select(-sex)</code> command is not executed by R. It is
-sent to the database instead. Only the <em>final</em> result is
-retrieved and displayed to you.</p>
-<p>Of course, we could always add on more steps, e.g., we could filter
-by <code>species_id</code> or minimum <code>weight</code>. That’s why R
-doesn’t retrieve the full set of results - instead it only retrieves the
-first 10 results from the database by default. (After all, you might
-want to add an additional step and get the database to do more
-work…)</p>
-<p>To instruct R to stop being lazy, e.g. to retrieve all of the query
-results from the database, we add the <code>collect()</code> command to
-our pipe. It indicates that our database query is finished: time to get
-the <em>final</em> results and load them into the R session.</p>
-<div class="codewrapper sourceCode" id="cb22">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">data_subset</span> <span class="op">&lt;-</span> <span class="va">surveys</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">filter</span><span class="op">(</span><span class="va">weight</span> <span class="op">&lt;</span> <span class="fl">5</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">select</span><span class="op">(</span><span class="va">species_id</span>, <span class="va">sex</span>, <span class="va">weight</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">collect</span><span class="op">(</span><span class="op">)</span></span></code></pre>
-</div>
-<p>Now we have all 17 rows that match our query in a
-<code>data.frame</code> and can continue to work with them exclusively
-in R, without communicating with the database.</p>
-</section><section id="complex-database-queries"><h2 class="section-heading">Complex database queries<a class="anchor" aria-label="anchor" href="#complex-database-queries"></a>
-</h2>
-<hr class="half-width">
-<p><strong><code>dplyr</code></strong> enables database queries across
-one or multiple database tables, using the same single- and
-multiple-table verbs you encountered previously. This means you can use
-the same commands regardless of whether you interact with a remote
-database or local dataset! This is a really useful feature if you work
-with large datasets: you can first prototype your code on a small subset
-that fits into memory, and when your code is ready, you can change the
-input dataset to your full database without having to change the
-syntax.</p>
-<p>On the other hand, being able to use SQL queries directly can be
-useful if your collaborators have already put together complex queries
-to prepare the dataset that you need for your analysis.</p>
-<p>To illustrate how to use <strong><code>dplyr</code></strong> with
-these complex queries, we are going to join the <code>plots</code> and
-<code>surveys</code> tables. The <code>plots</code> table in the
-database contains information about the different plots surveyed by the
-researchers. To access it, we point the <code>tbl()</code> command to
-it:</p>
-<div class="codewrapper sourceCode" id="cb23">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">plots</span> <span class="op">&lt;-</span> <span class="fu">tbl</span><span class="op">(</span><span class="va">mammals</span>, <span class="st">"plots"</span><span class="op">)</span></span>
-<span><span class="va">plots</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; # Source:   table&lt;plots&gt; [?? x 2]</span></span>
-<span><span class="co">#&gt; # Database: sqlite 3.41.2 [/home/runner/work/R-ecology-lesson/R-ecology-lesson/site/built/data_raw/portal_mammals.sqlite]</span></span>
-<span><span class="co">#&gt;    plot_id plot_type                </span></span>
-<span><span class="co">#&gt;      &lt;int&gt; &lt;chr&gt;                    </span></span>
-<span><span class="co">#&gt;  1       1 Spectab exclosure        </span></span>
-<span><span class="co">#&gt;  2       2 Control                  </span></span>
-<span><span class="co">#&gt;  3       3 Long-term Krat Exclosure </span></span>
-<span><span class="co">#&gt;  4       4 Control                  </span></span>
-<span><span class="co">#&gt;  5       5 Rodent Exclosure         </span></span>
-<span><span class="co">#&gt;  6       6 Short-term Krat Exclosure</span></span>
-<span><span class="co">#&gt;  7       7 Rodent Exclosure         </span></span>
-<span><span class="co">#&gt;  8       8 Control                  </span></span>
-<span><span class="co">#&gt;  9       9 Spectab exclosure        </span></span>
-<span><span class="co">#&gt; 10      10 Rodent Exclosure         </span></span>
-<span><span class="co">#&gt; # ℹ more rows</span></span></code></pre>
-</div>
-<p>The <code>plot_id</code> column also features in the
-<code>surveys</code> table:</p>
-<div class="codewrapper sourceCode" id="cb25">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">surveys</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; # Source:   table&lt;surveys&gt; [?? x 9]</span></span>
-<span><span class="co">#&gt; # Database: sqlite 3.41.2 [/home/runner/work/R-ecology-lesson/R-ecology-lesson/site/built/data_raw/portal_mammals.sqlite]</span></span>
-<span><span class="co">#&gt;    record_id month   day  year plot_id species_id sex   hindfoot_length weight</span></span>
-<span><span class="co">#&gt;        &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt;   &lt;int&gt; &lt;chr&gt;      &lt;chr&gt;           &lt;int&gt;  &lt;int&gt;</span></span>
-<span><span class="co">#&gt;  1         1     7    16  1977       2 NL         M                  32     NA</span></span>
-<span><span class="co">#&gt;  2         2     7    16  1977       3 NL         M                  33     NA</span></span>
-<span><span class="co">#&gt;  3         3     7    16  1977       2 DM         F                  37     NA</span></span>
-<span><span class="co">#&gt;  4         4     7    16  1977       7 DM         M                  36     NA</span></span>
-<span><span class="co">#&gt;  5         5     7    16  1977       3 DM         M                  35     NA</span></span>
-<span><span class="co">#&gt;  6         6     7    16  1977       1 PF         M                  14     NA</span></span>
-<span><span class="co">#&gt;  7         7     7    16  1977       2 PE         F                  NA     NA</span></span>
-<span><span class="co">#&gt;  8         8     7    16  1977       1 DM         M                  37     NA</span></span>
-<span><span class="co">#&gt;  9         9     7    16  1977       1 DM         F                  34     NA</span></span>
-<span><span class="co">#&gt; 10        10     7    16  1977       6 PF         F                  20     NA</span></span>
-<span><span class="co">#&gt; # ℹ more rows</span></span></code></pre>
-</div>
-<p>Because <code>plot_id</code> is listed in both tables, we can use it
-to look up matching records, and join the two tables.</p>
-<p>If we have two tables named x and y with a common column called “ID”,
-we can join them using ‘join’ functions, two of which are described and
-illustrated below.</p>
-<ol style="list-style-type: decimal">
-<li><p>inner_join() : This returns all rows from x where there are
-matching values in y, and all columns from x and y.</p></li>
-<li><p>left_join() : This return all rows from x, and all columns from x
-and y. Rows in x with no match in y will have NA values in the new
-columns.</p></li>
-</ol>
-<p>In both forms of join, if there are multiple matches between x and y,
-all combinations of the matches are returned. For the full list of
-‘join’ functions, check out the <a href="https://dplyr.tidyverse.org/reference/mutate-joins.html" class="external-link">tidyverse
-join page.</a></p>
-<p>In our example, the two tables we want to join are ‘plots’ and
-‘surveys’.</p>
-<figure><img src="./fig/joins.svg" alt="diagram illustrating inner and left joins" class="figure mx-auto d-block"></figure><p>For example, to extract all surveys for the first plot, which has
-<code>plot_id</code> 1, we can do:</p>
-<div class="codewrapper sourceCode" id="cb27">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">plots</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">filter</span><span class="op">(</span><span class="va">plot_id</span> <span class="op">==</span> <span class="fl">1</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">inner_join</span><span class="op">(</span><span class="va">surveys</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">collect</span><span class="op">(</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; Joining with `by = join_by(plot_id)`</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; # A tibble: 1,995 × 10</span></span>
-<span><span class="co">#&gt;    plot_id plot_type         record_id month   day  year species_id sex  </span></span>
-<span><span class="co">#&gt;      &lt;int&gt; &lt;chr&gt;                 &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;      &lt;chr&gt;</span></span>
-<span><span class="co">#&gt;  1       1 Spectab exclosure         6     7    16  1977 PF         M    </span></span>
-<span><span class="co">#&gt;  2       1 Spectab exclosure         8     7    16  1977 DM         M    </span></span>
-<span><span class="co">#&gt;  3       1 Spectab exclosure         9     7    16  1977 DM         F    </span></span>
-<span><span class="co">#&gt;  4       1 Spectab exclosure        78     8    19  1977 PF         M    </span></span>
-<span><span class="co">#&gt;  5       1 Spectab exclosure        80     8    19  1977 DS         M    </span></span>
-<span><span class="co">#&gt;  6       1 Spectab exclosure       218     9    13  1977 PF         M    </span></span>
-<span><span class="co">#&gt;  7       1 Spectab exclosure       222     9    13  1977 DS         M    </span></span>
-<span><span class="co">#&gt;  8       1 Spectab exclosure       239     9    13  1977 DS         M    </span></span>
-<span><span class="co">#&gt;  9       1 Spectab exclosure       263    10    16  1977 DM         M    </span></span>
-<span><span class="co">#&gt; 10       1 Spectab exclosure       270    10    16  1977 DM         F    </span></span>
-<span><span class="co">#&gt; # ℹ 1,985 more rows</span></span>
-<span><span class="co">#&gt; # ℹ 2 more variables: hindfoot_length &lt;int&gt;, weight &lt;int&gt;</span></span></code></pre>
-</div>
-<p><strong>Important Note:</strong> Without the <code>collect()</code>
-statement, only the first 10 matching rows are returned. By adding
-<code>collect()</code>, the full set of 1,985 is retrieved.</p>
-<div id="challenge" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge" class="callout-inner">
-<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge"></a>
-</h3>
-<div class="callout-content">
-<p>Write a query that returns the number of rodents observed in each
-plot in each year.</p>
-<p>Hint: Connect to the species table and write a query that joins the
-species and survey tables together to exclude all non-rodents. The query
-should return counts of rodents by year.</p>
-<p>Optional: Write a query in SQL that will produce the same result. You
-can join multiple tables together using the following syntax where
-foreign key refers to your unique id (e.g.,
-<code>species_id</code>):</p>
-<div class="codewrapper sourceCode" id="cb30">
-<h3 class="code-label">SQL<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode sql" tabindex="0"><code class="sourceCode sql"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="kw">table</span>.col, <span class="kw">table</span>.col</span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> table1 <span class="kw">JOIN</span> table2</span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="kw">ON</span> table1.<span class="kw">key</span> <span class="op">=</span> table2.<span class="kw">key</span></span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="kw">JOIN</span> table3 <span class="kw">ON</span> table2.<span class="kw">key</span> <span class="op">=</span> table3.<span class="kw">key</span></span></code></pre>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
-<div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb31">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">## with dplyr syntax</span></span>
-<span><span class="va">species</span> <span class="op">&lt;-</span> <span class="fu">tbl</span><span class="op">(</span><span class="va">mammals</span>, <span class="st">"species"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu">left_join</span><span class="op">(</span><span class="va">surveys</span>, <span class="va">species</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">filter</span><span class="op">(</span><span class="va">taxa</span> <span class="op">==</span> <span class="st">"Rodent"</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">group_by</span><span class="op">(</span><span class="va">taxa</span>, <span class="va">year</span>, <span class="va">plot_id</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">tally</span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">collect</span><span class="op">(</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; Joining with `by = join_by(species_id)`</span></span></code></pre>
-</div>
-<div class="codewrapper sourceCode" id="cb33">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">## with SQL syntax</span></span>
-<span><span class="va">query</span> <span class="op">&lt;-</span> <span class="fu">paste</span><span class="op">(</span><span class="st">"</span></span>
-<span><span class="st">SELECT a.year, b.taxa,count(*) as count</span></span>
-<span><span class="st">FROM surveys a</span></span>
-<span><span class="st">JOIN species b</span></span>
-<span><span class="st">ON a.species_id = b.species_id</span></span>
-<span><span class="st">AND b.taxa = 'Rodent'</span></span>
-<span><span class="st">GROUP BY b.taxa, a.year, a.plot_id"</span>,</span>
-<span>sep <span class="op">=</span> <span class="st">""</span> <span class="op">)</span></span>
-<span></span>
-<span><span class="fu">tbl</span><span class="op">(</span><span class="va">mammals</span>, <span class="fu">sql</span><span class="op">(</span><span class="va">query</span><span class="op">)</span><span class="op">)</span></span></code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-1" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge-1" class="callout-inner">
-<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge-1"></a>
-</h3>
-<div class="callout-content">
-<p>Write a query that returns the total number of rodents in each genus
-caught in the different plot types.</p>
-<p>Hint: Write a query that joins the species, plot, and survey tables
-together. The query should return counts of genus by plot type.</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
-<div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb34">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">species</span> <span class="op">&lt;-</span> <span class="fu">tbl</span><span class="op">(</span><span class="va">mammals</span>, <span class="st">"species"</span><span class="op">)</span></span>
-<span><span class="va">genus_counts</span> <span class="op">&lt;-</span> <span class="fu">left_join</span><span class="op">(</span><span class="va">surveys</span>, <span class="va">plots</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">left_join</span><span class="op">(</span><span class="va">species</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">filter</span><span class="op">(</span><span class="va">taxa</span> <span class="op">==</span> <span class="st">"Rodent"</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">group_by</span><span class="op">(</span><span class="va">plot_type</span>, <span class="va">genus</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">tally</span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">collect</span><span class="op">(</span><span class="op">)</span></span></code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p>This is useful if we are interested in estimating the number of
-individuals belonging to each genus found in each plot type. But what if
-we were interested in the number of genera found in each plot type?
-Using <code>tally()</code> gives the number of individuals, instead we
-need to use <code>n_distinct()</code> to count the number of unique
-values found in a column.</p>
-<div class="codewrapper sourceCode" id="cb35">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">species</span> <span class="op">&lt;-</span> <span class="fu">tbl</span><span class="op">(</span><span class="va">mammals</span>, <span class="st">"species"</span><span class="op">)</span></span>
-<span><span class="va">unique_genera</span> <span class="op">&lt;-</span> <span class="fu">left_join</span><span class="op">(</span><span class="va">surveys</span>, <span class="va">plots</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>    <span class="fu">left_join</span><span class="op">(</span><span class="va">species</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>    <span class="fu">group_by</span><span class="op">(</span><span class="va">plot_type</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>    <span class="fu">summarize</span><span class="op">(</span></span>
-<span>        n_genera <span class="op">=</span> <span class="fu">n_distinct</span><span class="op">(</span><span class="va">genus</span><span class="op">)</span></span>
-<span>    <span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>    <span class="fu">collect</span><span class="op">(</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; Joining with `by = join_by(plot_id)`</span></span>
-<span><span class="co">#&gt; Joining with `by = join_by(species_id)`</span></span></code></pre>
-</div>
-<p><code>n_distinct</code>, like the other
-<strong><code>dplyr</code></strong> functions we have used in this
-lesson, works not only on database connections but also on regular data
-frames.</p>
-</section><section id="creating-a-new-sqlite-database"><h2 class="section-heading">Creating a new SQLite database<a class="anchor" aria-label="anchor" href="#creating-a-new-sqlite-database"></a>
-</h2>
-<hr class="half-width">
-<p>So far, we have used a previously prepared SQLite database. But we
-can also use R to create a new database, e.g. from existing
-<code>csv</code> files. Let’s recreate the mammals database that we’ve
-been working with, in R. First let’s download and read in the
-<code>csv</code> files. We’ll import
-<strong><code>tidyverse</code></strong> to gain access to the
-<code>read_csv()</code> function.</p>
-<div class="codewrapper sourceCode" id="cb37">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">download.file</span><span class="op">(</span><span class="st">"https://ndownloader.figshare.com/files/3299483"</span>,</span>
-<span>              <span class="st">"data_raw/species.csv"</span><span class="op">)</span></span>
-<span><span class="fu">download.file</span><span class="op">(</span><span class="st">"https://ndownloader.figshare.com/files/10717177"</span>,</span>
-<span>              <span class="st">"data_raw/surveys.csv"</span><span class="op">)</span></span>
-<span><span class="fu">download.file</span><span class="op">(</span><span class="st">"https://ndownloader.figshare.com/files/3299474"</span>,</span>
-<span>              <span class="st">"data_raw/plots.csv"</span><span class="op">)</span></span>
-<span><span class="kw">library</span><span class="op">(</span><span class="va">tidyverse</span><span class="op">)</span></span>
-<span><span class="va">species</span> <span class="op">&lt;-</span> <span class="fu">read_csv</span><span class="op">(</span><span class="st">"data_raw/species.csv"</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; Rows: 54 Columns: 4</span></span>
-<span><span class="co">#&gt; ── Column specification ────────────────────────────────────────────────────────</span></span>
-<span><span class="co">#&gt; Delimiter: ","</span></span>
-<span><span class="co">#&gt; chr (4): species_id, genus, species, taxa</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; ℹ Use `spec()` to retrieve the full column specification for this data.</span></span>
-<span><span class="co">#&gt; ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</span></span></code></pre>
-</div>
-<div class="codewrapper sourceCode" id="cb39">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">surveys</span> <span class="op">&lt;-</span> <span class="fu">read_csv</span><span class="op">(</span><span class="st">"data_raw/surveys.csv"</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; Rows: 35549 Columns: 9</span></span>
-<span><span class="co">#&gt; ── Column specification ────────────────────────────────────────────────────────</span></span>
-<span><span class="co">#&gt; Delimiter: ","</span></span>
-<span><span class="co">#&gt; chr (2): species_id, sex</span></span>
-<span><span class="co">#&gt; dbl (7): record_id, month, day, year, plot_id, hindfoot_length, weight</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; ℹ Use `spec()` to retrieve the full column specification for this data.</span></span>
-<span><span class="co">#&gt; ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</span></span></code></pre>
-</div>
-<div class="codewrapper sourceCode" id="cb41">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">plots</span> <span class="op">&lt;-</span> <span class="fu">read_csv</span><span class="op">(</span><span class="st">"data_raw/plots.csv"</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; Rows: 24 Columns: 2</span></span>
-<span><span class="co">#&gt; ── Column specification ────────────────────────────────────────────────────────</span></span>
-<span><span class="co">#&gt; Delimiter: ","</span></span>
-<span><span class="co">#&gt; chr (1): plot_type</span></span>
-<span><span class="co">#&gt; dbl (1): plot_id</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; ℹ Use `spec()` to retrieve the full column specification for this data.</span></span>
-<span><span class="co">#&gt; ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</span></span></code></pre>
-</div>
-<p>Also, you can create new SQLite database with
-<strong><code>dplyr</code></strong> by adding an argument to the same
-command we used above to open an existing <code>.sqlite</code> file. The
-<code>create = TRUE</code> argument instructs R to create a new, empty
-database instead.</p>
-<p><strong>Caution:</strong> When <code>create = TRUE</code> is added,
-any existing database at the same location is overwritten <em>without
-warning</em>.</p>
-<div class="codewrapper sourceCode" id="cb43">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">my_db_file</span> <span class="op">&lt;-</span> <span class="st">"data/portal-database-output.sqlite"</span></span>
-<span><span class="va">my_db</span> <span class="op">&lt;-</span> <span class="fu">src_sqlite</span><span class="op">(</span><span class="va">my_db_file</span>, create <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">WARNING<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="warning" tabindex="0"><code><span><span class="co">#&gt; Warning: `src_sqlite()` was deprecated in dplyr 1.0.0.</span></span>
-<span><span class="co">#&gt; ℹ Please use `tbl()` directly with a database connection</span></span>
-<span><span class="co">#&gt; Call `lifecycle::last_lifecycle_warnings()` to see where this warning was</span></span>
-<span><span class="co">#&gt; generated.</span></span></code></pre>
-</div>
-<p>Currently, our new database is empty, it doesn’t contain any
-tables:</p>
-<div class="codewrapper sourceCode" id="cb45">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">my_db</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="co">#&gt; src:  sqlite 3.41.2 [/home/runner/work/R-ecology-lesson/R-ecology-lesson/site/built/data/portal-database-output.sqlite]</span></span>
-<span><span class="co">#&gt; tbls:</span></span></code></pre>
-</div>
-<p>To add tables, we copy the existing data.frames into the database one
-by one:</p>
-<div class="codewrapper sourceCode" id="cb47">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">copy_to</span><span class="op">(</span><span class="va">my_db</span>, <span class="va">surveys</span><span class="op">)</span></span>
-<span><span class="fu">copy_to</span><span class="op">(</span><span class="va">my_db</span>, <span class="va">plots</span><span class="op">)</span></span>
-<span><span class="va">my_db</span></span></code></pre>
-</div>
-<p>If you check the location of our database you’ll see that data is
-automatically being written to disk. R and
-<strong><code>dplyr</code></strong> not only provide ways to query
-existing databases, they also provide functionality to create your own
-databases from flat files!</p>
-<div id="challenge-2" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<div id="challenge-2" class="callout-inner">
-<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge-2"></a>
-</h3>
-<div class="callout-content">
-<p>Add the remaining species table to the <code>my_db</code> database
-and run some of your queries from earlier in the lesson to verify that
-you have faithfully recreated the mammals database.</p>
-</div>
-</div>
-</div>
-<p><strong>Note:</strong> In this example, we first loaded all of the
-data into the R session by reading the three <code>csv</code> files.
-Because all the data has to flow through R, this is not suitable for
-very large datasets.</p>
-<p><strong>Note:</strong> Finally, to close the connection to the
-mammals database you may use <code>DBI::dbDisconnect(mammals)</code>;
-this discards all pending work and frees resources, e.g. memory.</p>
 </section></section>
 </div>
     </main>
@@ -5600,12 +4397,12 @@ this discards all pending work and frees resources, e.g. memory.</p>
 				<p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
         
-        <a href="https://github.com/datacarpentry/R-ecology-lesson/edit/main/README.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/ndporter/R-ecology-lesson-whitehead-f23/edit/main/README.md" class="external-link">Edit on GitHub</a>
         
 	
-        | <a href="https://github.com/datacarpentry/R-ecology-lesson/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
-        | <a href="https://github.com/datacarpentry/R-ecology-lesson/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/datacarpentry/R-ecology-lesson/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:curriculum@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+        | <a href="https://github.com/ndporter/R-ecology-lesson-whitehead-f23/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
+        | <a href="https://github.com/ndporter/R-ecology-lesson-whitehead-f23/" class="external-link">Source</a></p>
+				<p><a href="https://github.com/ndporter/R-ecology-lesson-whitehead-f23/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:ndporter@vt.edu">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         
@@ -5627,17 +4424,17 @@ this discards all pending work and frees resources, e.g. memory.</p>
     {
   "@context": "https://schema.org",
   "@type": "TrainingMaterial",
-  "@id": "https://datacarpentry.github.io/R-ecology-lesson/aio.html",
+  "@id": "https://ndporter.github.io/R-ecology-lesson-whitehead-f23/aio.html",
   "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
   "keywords": "software, data, lesson, The Carpentries",
   "name": "All in One View",
   "creativeWorkStatus": "active",
-  "url": "https://datacarpentry.github.io/R-ecology-lesson/aio.html",
-  "identifier": "https://datacarpentry.github.io/R-ecology-lesson/aio.html",
-  "dateCreated": "2015-04-02",
-  "dateModified": "2023-09-26",
-  "datePublished": "2023-09-26"
+  "url": "https://ndporter.github.io/R-ecology-lesson-whitehead-f23/aio.html",
+  "identifier": "https://ndporter.github.io/R-ecology-lesson-whitehead-f23/aio.html",
+  "dateCreated": "2023-09-29",
+  "dateModified": "2023-09-29",
+  "datePublished": "2023-09-29"
 }
 
   </script><script>
