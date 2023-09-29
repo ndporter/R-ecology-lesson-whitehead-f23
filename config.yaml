@@ -11,10 +11,10 @@
 carpentry: 'dc'
 
 # Overall title for pages.
-title: 'Data Analysis and Visualisation in R for Ecologists'
+title: 'Data Analysis and Visualisation in R for Ecologists - Abbreviated'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: '2015-04-02'
+created: '2023-09-29'
 
 # Comma-separated list of keywords for the lesson
 keywords: 'software, data, lesson, The Carpentries'
@@ -27,13 +27,13 @@ life_cycle: 'stable'
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/datacarpentry/R-ecology-lesson'
+source: 'https://github.com/ndporter/R-ecology-lesson-whitehead-f23'
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'curriculum@carpentries.org'
+contact: 'ndporter@vt.edu'
 
 # Navigation ------------------------------------------------
 #
@@ -64,7 +64,6 @@ episodes:
 - 02-starting-with-data.Rmd
 - 03-dplyr.Rmd
 - 04-visualization-ggplot2.Rmd
-- 05-r-and-databases.Rmd
 
 # Information for Learners
 learners: 
@@ -83,4 +82,4 @@ profiles:
 # sandpaper and varnish versions) should live
 
 
-url: 'https://datacarpentry.github.io/R-ecology-lesson'
+url: 'https://ndporter.github.io/R-ecology-lesson-whitehead-f23/'

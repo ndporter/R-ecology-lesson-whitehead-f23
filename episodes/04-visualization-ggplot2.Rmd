@@ -1,7 +1,8 @@
 ---
 title: Data visualization with ggplot2
-author: Data Carpentry contributors
-minutes: 60
+author: Data Carpentry contributors & Nathaniel Porter
+teaching: 10
+exercises: 10
 editor_options:
   chunk_output_type: console
 ---

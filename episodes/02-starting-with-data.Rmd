@@ -1,7 +1,8 @@
 ---
 title: Starting with data
-author: Data Carpentry contributors
-minutes: 20
+author: Data Carpentry contributors.& Nathaniel Porter
+teaching: 10
+exercises: 10
 ---
 
 ```{r, echo=FALSE, purl=FALSE, message=FALSE}

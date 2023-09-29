@@ -1,6 +1,8 @@
 ---
 title: Manipulating, analyzing and exporting data with tidyverse
-author: Data Carpentry contributors
+author: Data Carpentry contributors & Nathaniel Porter
+teaching: 20
+exercises: 20
 ---
 
 ```{r, echo=FALSE, purl=FALSE, message=FALSE}
