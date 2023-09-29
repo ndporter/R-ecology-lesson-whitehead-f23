@@ -1,7 +1,8 @@
 ---
 title: Data visualization with ggplot2
-author: Data Carpentry contributors
-minutes: 60
+author: Data Carpentry contributors & Nathaniel Porter
+teaching: 10
+exercises: 10
 editor_options:
   chunk_output_type: console
 ---
@@ -474,46 +475,12 @@ ggplot(data = yearly_sex_counts, mapping = aes(x = year, y = n, color = sex)) +
 
 <img src="fig/04-visualization-ggplot2-rendered-facet-by-genus-and-sex-1.png" style="display: block; margin: auto;" />
 
-We can also facet both by sex and genus:
-
-
-```r
-ggplot(data = yearly_sex_counts,
-       mapping = aes(x = year, y = n, color = sex)) +
-  geom_line() +
-  facet_grid(rows = vars(sex), cols =  vars(genus))
-```
-
-<img src="fig/04-visualization-ggplot2-rendered-average-weight-time-facet-both-1.png" style="display: block; margin: auto;" />
-
-You can also organise the panels only by rows (or only by columns):
-
-
-```r
-# One column, facet by rows
-ggplot(data = yearly_sex_counts,
-       mapping = aes(x = year, y = n, color = sex)) +
-  geom_line() +
-  facet_grid(rows = vars(genus))
-```
-
-<img src="fig/04-visualization-ggplot2-rendered-average-weight-time-facet-sex-rows-1.png" style="display: block; margin: auto;" />
-
-
-```r
-# One row, facet by column
-ggplot(data = yearly_sex_counts,
-       mapping = aes(x = year, y = n, color = sex)) +
-  geom_line() +
-  facet_grid(cols = vars(genus))
-```
-
-<img src="fig/04-visualization-ggplot2-rendered-average-weight-time-facet-sex-columns-1.png" style="display: block; margin: auto;" />
-
-**Note:**
+::: callout
+### Note on older code
 `ggplot2` before version 3.0.0 used formulas to specify how plots are faceted.
 If you encounter `facet_grid`/`wrap(...)` code containing `~`, please read
 [https://ggplot2.tidyverse.org/news/#tidy-evaluation](https://ggplot2.tidyverse.org/news/#tidy-evaluation).
+:::
 
 ## **`ggplot2`** themes
 
@@ -583,7 +550,7 @@ ggplot(data = yearly_weight, mapping = aes(x=year, y=avg_weight)) +
 
 
 
-## Customization
+## Customization (optional)
 
 Take a look at the [**`ggplot2`** cheat sheet](https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf), and
 think of ways you could improve the plot.
@@ -686,45 +653,6 @@ Here are some ideas:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Arranging plots
-
-Faceting is a great tool for splitting one plot into multiple plots, but
-sometimes you may want to produce a single figure that contains multiple plots
-using different variables or even different data frames. The **`patchwork`**
-package allows us to combine separate ggplots into a single figure while keeping
-everything aligned properly. Like most R packages, we can install `patchwork`
-from CRAN, the R package repository:
-
-
-```r
-install.packages("patchwork")
-```
-
-After you have loaded the `patchwork` package you can use `+` to place plots
-next to each other, `/` to arrange them vertically, and `plot_layout()` to
-determine how much space each plot uses:
-
-
-```r
-library(patchwork)
-
-plot_weight <- ggplot(data = surveys_complete, aes(x = species_id, y = weight)) +
-  geom_boxplot() +
-  labs(x = "Species", y = expression(log[10](Weight))) +
-  scale_y_log10()
-
-plot_count <- ggplot(data = yearly_counts, aes(x = year, y = n, color = genus)) +
-  geom_line() +
-  labs(x = "Year", y = "Abundance")
-
-plot_weight / plot_count + plot_layout(heights = c(3, 2))
-```
-
-<img src="fig/04-visualization-ggplot2-rendered-patchwork-example-1.png" style="display: block; margin: auto;" />
-
-You can also use parentheses `()` to create more complex layouts. There are
-many useful examples on the [patchwork website](https://patchwork.data-imaginist.com/)
-
 ## Exporting plots
 
 After creating your plot, you can save it to a file in your favorite format. The
@@ -754,10 +682,6 @@ my_plot <- ggplot(data = yearly_sex_counts,
           text = element_text(size = 16))
 
 ggsave("name_of_file.png", my_plot, width = 15, height = 10)
-
-## This also works for plots combined with patchwork
-plot_combined <- plot_weight / plot_count + plot_layout(heights = c(3, 2))
-ggsave("plot_combined.png", plot_combined, width = 10, dpi = 300)
 ```
 
 Note: The parameters `width` and `height` also determine the font size in the
