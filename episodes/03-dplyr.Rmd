@@ -51,31 +51,22 @@ The **`tidyverse`** package tries to address 3 common issues that arise when
 doing data analysis in R:
 
 1. The results from a base R function sometimes depend on the type of data.
-2. R expressions are used in a non standard way, which can be confusing for new
-  learners.
-3. The existence of hidden arguments having default operations that new learners are not aware
-  of.
+2. R expressions are used in a non standard way, which can be confusing for new learners.
+3. The existence of hidden arguments having default operations that new learners are not aware of.
 
 You should already have installed and loaded the **`tidyverse`** package.
 If you haven't already done so, you can type `install.packages("tidyverse")` straight into the console. Then, type `library(tidyverse)` to load the package.
 
 ## What are **`dplyr`** and **`tidyr`**?
 
-The package **`dplyr`** provides helper tools for the most common data manipulation
+**`dplyr`** provides helper tools for the most common data manipulation
 tasks. It is built to work directly with data frames, with many common tasks
-optimized by being written in a compiled language (C++). An additional feature is the
-ability to work directly with data stored in an external database. The benefits of
-doing this are that the data can be managed natively in a relational database,
-queries can be conducted on that database, and only the results of the query are
-returned.
+optimized. An additional feature is the ability to work directly with data 
+stored in an external database. The benefits of doing this are that the data can
+be managed natively in a relational database, queries can be conducted on that 
+database, and only the results of the query are returned.
 
-This addresses a common problem with R in that all operations are conducted
-in-memory and thus the amount of data you can work with is limited by available
-memory. The database connections essentially remove that limitation in that you
-can connect to a database of many hundreds of GB, conduct queries on it directly, and pull
-back into R only what you need for analysis.
-
-The package **`tidyr`** addresses the common problem of wanting to reshape your data for
+**`tidyr`** addresses the common problem of wanting to reshape your data for
 plotting and usage by different R functions. For example, sometimes we want data sets where we have one
 row per measurement. Other times we want a data frame where each measurement type has its
 own column, and rows are instead more aggregated groups
@@ -699,10 +690,6 @@ surveys_wide_genera %>%
   dataset where we have a names column called `measurement` and a
   `value` column that takes on the value of either `hindfoot_length` or
   `weight`. *Hint*: You'll need to specify which columns will be part of the reshape.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::  blockquote
 
 :::::::: solution
 
