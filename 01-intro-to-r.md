@@ -107,7 +107,7 @@ What do you think is the current content of the object `weight_lb`? 126.5 or 220
 
 Up to now, your code has been in the console. This is useful for quick queries but not so helpful if you want to revisit your work for any reason.
 
-The easiest way to ensure your R code (scripts) works seamlessly with data and other files is to create a project with `File - New Project`. Choose `New Directory` and `New Project` then choose a location for the folder and create the project.
+The easiest way to ensure your R code (scripts) works seamlessly with data and other files is to use a project. If you didn't before, create a project with `File - New Project`. Choose `New Directory` and `New Project` then choose a location for the folder and create the project.
 
 Create a script in your new project by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>. It is wise to save your script file immediately. To do this press <kbd>Ctrl</kbd> + <kbd>S</kbd>. This will open a dialogue box where you can decide where to save your script file, and what to name it. The `.R` file extension is added automatically and ensures your file will open with RStudio.
 
