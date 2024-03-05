@@ -869,12 +869,12 @@ name is already in use.</li>
 spaces, how you name objects, etc. Styles can include “lower_snake”,
 “UPPER_SNAKE”, “lowerCamelCase”, “UpperCamelCase”, etc.</li>
 </ul>
-<div id="objects-vs.-variables" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="objects-vs.-variables" class="callout-inner">
-<h3 class="callout-title">Objects vs. variables<a class="anchor" aria-label="anchor" href="#objects-vs.-variables"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="objects-vs--variables">Objects vs. variables<a class="anchor" aria-label="anchor" href="#objects-vs--variables"></a>
 </h3>
 <div class="callout-content">
 <p>What are known as <code>objects</code> in <code>R</code> are known as
@@ -964,9 +964,9 @@ that line (i.e. no need to select the whole line), then press
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This line is a comment and doesn't cause a problem</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">*</span> <span class="dv">3</span> <span class="co">#this comment doesn't either</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>But this line will produce an error</span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="co"># This line is a comment and doesn't cause a problem</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="dv">2</span> <span class="sc">*</span> <span class="dv">3</span> <span class="co">#this comment doesn't either</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>But this line will produce an error</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1354,12 +1354,12 @@ provide one or several indices in square brackets. For instance:</p>
 </h3>
 <pre class="output" tabindex="0"><code><span><span class="co">#&gt; [1] "dog" "rat"</span></span></code></pre>
 </div>
-<div id="program-in-other-languages" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="program-in-other-languages" class="callout-inner">
-<h3 class="callout-title">Program in other languages?<a class="anchor" aria-label="anchor" href="#program-in-other-languages"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="program-in-other-languages">Program in other languages?<a class="anchor" aria-label="anchor" href="#program-in-other-languages"></a>
 </h3>
 <div class="callout-content">
 <p>R indices start at 1. Some other languages (like C++, Java, Perl, and
@@ -1715,12 +1715,12 @@ For example, in this dataset, <code>read_csv()</code> reads
 and <code>species</code> as <code>col_character</code>. You have the
 option to specify the data type for a column manually by using the
 <code>col_types</code> argument in <code>read_csv</code>.</p>
-<div id="note" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="note" class="callout-inner">
-<h3 class="callout-title">Note<a class="anchor" aria-label="anchor" href="#note"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="note">Note<a class="anchor" aria-label="anchor" href="#note"></a>
 </h3>
 <div class="callout-content">
 <p><code>read_csv()</code> is actually a special case of
@@ -1776,12 +1776,12 @@ that lets you extract the last few lines of the data set. It is called
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">view</span><span class="op">(</span><span class="va">surveys</span><span class="op">)</span></span></code></pre>
 </div>
-<div id="note-1" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="note-1" class="callout-inner">
-<h3 class="callout-title">Note<a class="anchor" aria-label="anchor" href="#note-1"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="note-1">Note<a class="anchor" aria-label="anchor" href="#note-1"></a>
 </h3>
 <div class="callout-content">
 <p>There are two functions for viewing which are case-sensitive. Using
@@ -2078,7 +2078,7 @@ out…</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2243,7 +2243,7 @@ recreate the barplot such that “undetermined” is first (before
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb34">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2258,12 +2258,12 @@ recreate the barplot such that “undetermined” is first (before
 </div>
 </div>
 </div>
-<div id="type-conversion" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="type-conversion" class="callout-inner">
-<h3 class="callout-title">Type conversion<a class="anchor" aria-label="anchor" href="#type-conversion"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="type-conversion">Type conversion<a class="anchor" aria-label="anchor" href="#type-conversion"></a>
 </h3>
 <div class="callout-content">
 <p>Automatic conversion of data types when data frames are created is
@@ -3815,7 +3815,7 @@ data?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3884,7 +3884,7 @@ density of points) is drawn.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb18">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3925,7 +3925,7 @@ these modifications:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3964,7 +3964,7 @@ layer on a jitter layer to show actual measurements.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4">Show me the solution</h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -4104,12 +4104,12 @@ grouped by <code>year</code>, <code>genus</code>, and
 <span>  <span class="fu">geom_line</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">facet_wrap</span><span class="op">(</span>facets <span class="op">=</span>  <span class="fu">vars</span><span class="op">(</span><span class="va">genus</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="fig/04-visualization-ggplot2-rendered-facet-by-genus-and-sex-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="note-on-older-code" class="callout callout">
+<figure><img src="fig/04-visualization-ggplot2-rendered-facet-by-genus-and-sex-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="note-on-older-code" class="callout-inner">
-<h3 class="callout-title">Note on older code<a class="anchor" aria-label="anchor" href="#note-on-older-code"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="note-on-older-code">Note on older code<a class="anchor" aria-label="anchor" href="#note-on-older-code"></a>
 </h3>
 <div class="callout-content">
 <p><code>ggplot2</code> before version 3.0.0 used formulas to specify
@@ -4167,7 +4167,7 @@ average weight of each species changes through the years.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5">Show me the solution</h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb31">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -4381,8 +4381,8 @@ determine the font size in the saved plot.</p>
   "url": "https://ndporter.github.io/R-ecology-lesson-whitehead-f23/aio.html",
   "identifier": "https://ndporter.github.io/R-ecology-lesson-whitehead-f23/aio.html",
   "dateCreated": "2023-09-29",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>
